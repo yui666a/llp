@@ -49,7 +49,23 @@ const config: NuxtConfig = {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    'nuxt-fontawesome',
   ],
+  // nuxt-fontawesomeの設定
+  fontawesome: {
+    component: 'font-awesome',
+    imports: [
+      {
+        set: '@fortawesome/free-solid-svg-icons',
+        icons: ['fas'],
+        // icons: ['faHome', 'faCaretRight'],
+      },
+      {
+        set: '@fortawesome/free-brands-svg-icons',
+        icons: ['fab'],
+      },
+    ],
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
