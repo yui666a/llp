@@ -51,8 +51,8 @@ jobs:
 
       - name: Build Nuxt.js app
         run: npm run build
-        env:
-          URL_PREFIX: llp
+        # env:
+        #   URL_PREFIX: llp
 
       # - name: Export Nuxt.js app
       #   run: npm run generate
