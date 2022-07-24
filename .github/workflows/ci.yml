@@ -54,11 +54,11 @@ jobs:
         env:
           URL_PREFIX: llp
 
-      - name: Export Nuxt.js app
-        run: npm run export
+      # - name: Export Nuxt.js app
+      #   run: npm run generate
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: out
+          publish_dir: ./dist
