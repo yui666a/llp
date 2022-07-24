@@ -5,7 +5,8 @@
 npm install --save-dev @nuxt/typescript-build @nuxt/types
 npm install --save-dev @nuxtjs/eslint-config-typescript
 npm install @vue/composition-api
-npm install @nuxt/typescript-runtime
+
+<!-- npm install @nuxt/typescript-runtime -->
 
 ```bash
 # install dependencies
