@@ -11,6 +11,7 @@
           <!-- <v-spacer /> -->
           <v-btn color="primary" nuxt to="/inspire"> Continue </v-btn>
           <v-btn color="primary" nuxt to="/input"> 入力画面へ </v-btn>
+          <v-btn color="primary" nuxt to="/login"> ログイン画面へ </v-btn>
         </v-card-actions>
       </v-card>
     </v-col>

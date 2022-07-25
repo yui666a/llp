@@ -1,15 +1,15 @@
 import colors from 'vuetify/es5/util/colors'
 import { NuxtConfig } from '@nuxt/types'
 
-// const urlPrefix = process.env.URL_PREFIX ? '/' + process.env.URL_PREFIX : ''
+const urlPrefix = process.env.URL_PREFIX ? '/' + process.env.URL_PREFIX : ''
 const environment = process.env.NODE_ENV || 'local'
 const env = require(`./env/${environment}.ts`)
 
 const config: NuxtConfig = {
   // GitHub pages デプロイ用
-  // assetPrefix: urlPrefix,
-  // basePath: urlPrefix,
-  // trailingSlash: true,
+  assetPrefix: urlPrefix,
+  basePath: urlPrefix,
+  trailingSlash: true,
   router: {
     base: env.BASE_URL,
   },
