@@ -1,7 +1,9 @@
 <html>
   <head>
     <script>
-      location.href = '/llp/'
+      var pathName = window.location.pathname
+      var redirectPath = '/llp/redirect'
+      location.href = redirectPath + '?p=' + encodeURI(pathName)
     </script>
   </head>
 </html>
