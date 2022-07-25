@@ -57,7 +57,18 @@
       </v-list>
     </v-navigation-drawer>
     <v-footer :absolute="!fixed" app>
-      <span>&copy; {{ new Date().getFullYear() }}</span>
+      <!-- <span>&copy; {{ new Date().getFullYear() }}</span> -->
+      <v-list-item
+        v-for="(item, i) in items"
+        :key="i"
+        :to="item.to"
+        router
+        exact
+      >
+        <div color="primary" nuxt :to="`${item.to}`">
+          <v-icon>{{ item.icon }}</v-icon>
+        </div>
+      </v-list-item>
     </v-footer>
   </v-app>
 </template>
@@ -72,8 +83,8 @@ export default {
       fixed: false,
       items: [
         {
-          icon: 'mdi-apps',
-          title: 'Welcome',
+          icon: 'mdi-home',
+          title: 'Home',
           to: '/',
         },
         {
@@ -81,11 +92,31 @@ export default {
           title: 'Inspire',
           to: '/inspire',
         },
+        {
+          icon: 'mdi-heart',
+          title: 'コンディションの入力',
+          to: '/input',
+        },
+        {
+          icon: 'mdi-calendar',
+          title: 'カレンダー',
+          to: '/calendar',
+        },
+        {
+          icon: 'mdi-chart-areaspline',
+          title: 'コンディションのグラフ',
+          to: '/condition',
+        },
+        {
+          icon: 'mdi-login-variant',
+          title: 'ログイン',
+          to: '/login',
+        },
       ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js',
+      title: 'ハリンタ',
     }
   },
 }
