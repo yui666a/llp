@@ -49,17 +49,17 @@ jobs:
       - name: Run tests 🧪
         run: npm run test
 
-      - name: Build Nuxt.js app
-        run: npm run build
-        # env:
-        #   URL_PREFIX: llp
+      # - name: Build Nuxt.js app
+      #   run: npm run build
+      # env:
+      #   URL_PREFIX: llp
 
-      # - name: Export Nuxt.js app
-      #   run: npm run generate
+      - name: Export Nuxt.js app
+        run: npm run generate
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: ../dist
+          FOLDER: ./dist
