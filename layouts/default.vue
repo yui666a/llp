@@ -25,16 +25,16 @@
       </v-list>
     </v-navigation-drawer>
     <v-app-bar :clipped-left="clipped" fixed app>
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-btn icon @click.stop="miniVariant = !miniVariant">
+      <!-- <v-app-bar-nav-icon @click.stop="drawer = !drawer" /> -->
+      <!-- <v-btn icon @click.stop="miniVariant = !miniVariant">
         <v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
-      </v-btn>
-      <v-btn icon @click.stop="clipped = !clipped">
+      </v-btn> -->
+      <!-- <v-btn icon @click.stop="clipped = !clipped">
         <v-icon>mdi-application</v-icon>
-      </v-btn>
-      <v-btn icon @click.stop="fixed = !fixed">
+      </v-btn> -->
+      <!-- <v-btn icon @click.stop="fixed = !fixed">
         <v-icon>mdi-minus</v-icon>
-      </v-btn>
+      </v-btn> -->
       <v-toolbar-title v-text="title" />
       <v-spacer />
       <v-btn icon @click.stop="rightDrawer = !rightDrawer">
@@ -62,6 +62,7 @@
         v-for="(item, i) in items"
         :key="i"
         :to="item.to"
+        class="footer-item"
         router
         exact
       >
@@ -87,11 +88,11 @@ export default {
           title: 'Home',
           to: '/',
         },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire',
-        },
+        // {
+        //   icon: 'mdi-chart-bubble',
+        //   title: 'Inspire',
+        //   to: '/inspire',
+        // },
         {
           icon: 'mdi-heart',
           title: 'コンディションの入力',
@@ -121,3 +122,12 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+#app {
+  height: 100vh;
+}
+.footer-item {
+  flex: none;
+}
+</style>
