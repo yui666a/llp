@@ -3,14 +3,14 @@
     <v-col class="text-center">
       Login
       <div>
-        ID
-        <input type="text" />
+        ID {{ id }}
+        <input v-model="idText" type="text" />
       </div>
       <div>
-        パスワード
-        <input type="text" />
+        パスワード {{ password }}
+        <input v-model="passwordText" type="text" />
       </div>
-      <v-btn color="primary"> ログイン </v-btn>
+      <v-btn color="primary" @click="submit"> ログイン </v-btn>
     </v-col>
   </v-row>
 </template>
@@ -20,10 +20,35 @@ export default {
   name: 'LoginPage',
   data() {
     return {
-      mentalConditionNumber: 0,
-      bodyConditionNumber: 0,
+      id: '',
+      password: '',
     }
   },
-  methods: {},
+  computed: {
+    idText: {
+      get() {
+        return this.id
+      },
+      set(value) {
+        this.id = value
+      },
+    },
+    passwordText: {
+      get() {
+        return this.password
+      },
+      set(value) {
+        this.password = value
+      },
+    },
+  },
+  methods: {
+    submit() {
+      this.name = localStorage.name
+      localStorage.id = this.id
+      localStorage.password = this.password
+      this.$router.push('/')
+    },
+  },
 }
 </script>
