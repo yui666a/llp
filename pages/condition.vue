@@ -2,7 +2,11 @@
   <v-row>
     <v-col class="text-center">
       <!-- <ConditionChart /> -->
-      <ConditionChart :chart-data="datacollection"></ConditionChart>
+      <!-- <ConditionChart :chart-data="datacollection"></ConditionChart> -->
+      <LineConditionChart
+        :chart-data="chartdata.datacollection"
+        :chart-options="options"
+      />
       <div class="text-center">
         <v-btn depressed small @click="fillData()">Randomize</v-btn>
       </div>
@@ -15,7 +19,22 @@ export default {
   name: 'ConditionPage',
   data() {
     return {
-      datacollection: null,
+      chartdata: {
+        datacollection: {
+          labels: ['January', 'February'],
+          datasets: [
+            {
+              label: 'Data One',
+              backgroundColor: '#f87979',
+              data: [40, 20],
+            },
+          ],
+        },
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+      },
     }
   },
   mounted() {
@@ -27,7 +46,7 @@ export default {
         labels: [this.getRandomInt(), this.getRandomInt()],
         datasets: [
           {
-            label: 'Test Data2',
+            label: 'Test Data1',
             backgroundColor: 'rgba(255, 100, 130, 0.2)',
             data: [this.getRandomInt(), this.getRandomInt()],
           },
