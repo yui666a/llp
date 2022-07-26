@@ -43,10 +43,14 @@ export default {
     },
   },
   methods: {
-    submit() {
-      this.name = localStorage.name
-      localStorage.id = this.id
-      localStorage.password = this.password
+    async submit() {
+      const baseUrl =
+        'https://script.google.com/macros/s/AKfycbxPUw73VyxjmzRw96UVsIpuPUlDvI9qFYF4MzpwOecly-KTiQrBv9jwu0sUVZ49b09N/exec'
+      const url = `${baseUrl}?type=login&name=${this.id}&pw=${this.password}`
+      const response = await this.$axios.$get(url)
+      localStorage.displayName = response.data.displayName
+      localStorage.id = response.data.id
+      localStorage.lineId = response.data.lineId
       this.$router.push('/')
     },
   },
