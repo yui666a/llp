@@ -21,26 +21,86 @@ export default {
     return {
       chartdata: {
         datacollection: {
-          labels: ['January', 'February'],
+          labels: [
+            '2021-08-02T09:30:22.710731+09:00',
+            '2021-08-02T11:10:22.710731+09:00',
+            '2021-08-02T13:00:22.710731+09:00',
+            '2021-08-02T15:00:22.710731+09:00',
+            '2021-08-02T18:30:22.710731+09:00',
+            '2021-08-02T19:50:22.710731+09:00',
+          ],
           datasets: [
             {
-              label: 'Data One',
-              backgroundColor: '#f87979',
-              data: [40, 20],
+              label: '気温',
+              data: [24.6, 26.8, 22.1, 28.5, 32.8, 29.0],
+              borderColor: 'rgba(255, 99, 132, 1)',
+              backgroundColor: 'rgba(255, 99, 132, 0.1)',
             },
           ],
+
+          // labels: ['data1', 'data2', 'data3', 'data4', 'data5', 'data6'],
+          // datasets: [
+          //   {
+          //     label: 'ココロ',
+          //     data: [4, 2, 4, 3, 2, 5],
+          //     borderColor: 'rgba(255, 99, 132, 1)',
+          //     backgroundColor: 'rgba(255, 99, 132, 0.1)',
+          //   },
+          //   {
+          //     label: 'カラダ',
+          //     fill: true,
+          //     backgroundColor: 'blue',
+          //     data: [3, 5, 1, 2, 3, 5],
+          //   },
+          // ],
         },
       },
       options: {
         responsive: true,
         maintainAspectRatio: false,
+        legend: {
+          display: false,
+        },
+        scales: {
+          xAxes: [
+            {
+              type: 'time',
+              time: {
+                parser: 'mm:ss',
+                unit: 'minute',
+                unitStepSize: 1,
+                displayFormats: {
+                  minute: 'mm',
+                },
+              },
+            },
+          ],
+          yAxes: [
+            {
+              ticks: {
+                beginAtZero: true,
+              },
+            },
+          ],
+        },
       },
     }
   },
   mounted() {
-    this.fillData()
+    console.log('mounted!')
+    this.getData()
+    // this.fillData()
   },
   methods: {
+    async getData() {
+      // const id = localStorage.id
+      const lineId = localStorage.lineId
+      const baseUrl =
+        'https://script.google.com/macros/s/AKfycbxPUw73VyxjmzRw96UVsIpuPUlDvI9qFYF4MzpwOecly-KTiQrBv9jwu0sUVZ49b09N/exec'
+      const url = `${baseUrl}?type=conditions&lineId=${lineId}`
+      const response = await this.$axios.$get(url)
+      console.log(response)
+    },
     fillData() {
       this.datacollection = {
         labels: [this.getRandomInt(), this.getRandomInt()],
