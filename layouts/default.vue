@@ -36,6 +36,8 @@
         <v-icon>mdi-minus</v-icon>
       </v-btn> -->
       <v-toolbar-title v-text="title" />
+      <v-spacer />
+      <div v-if="displayName">{{ displayName }}さん</div>
       <!-- <v-spacer /> -->
       <!-- <v-btn icon @click.stop="rightDrawer = !rightDrawer">
         <v-icon>mdi-menu</v-icon>
@@ -82,6 +84,7 @@ export default {
       clipped: false,
       drawer: false,
       fixed: false,
+      displayName: localStorage.displayName ? localStorage.displayName : '',
       items: [
         {
           icon: 'mdi-home',
@@ -119,6 +122,32 @@ export default {
       rightDrawer: false,
       title: 'ハリンタ',
     }
+  },
+  mounted() {
+    this.ls_event_handle = window.addEventListener('storage', this.eventMethod)
+  },
+  // destroyed() {
+  //   window.removeEventListener(this.ls_event_handle)
+  // },
+  methods: {
+    eventMethod(event) {
+      console.log(event)
+      const newVal = event.newValue
+      const oldVal = event.oldValue
+      switch (event.key) {
+        case LOCALSTORAGEKEY1:
+          console.log(newVal)
+          break
+
+        case LOCALSTORAGEKEY2:
+          console.log(oldVal)
+          break
+
+        default:
+          console.log(event.key)
+          break
+      }
+    },
   },
 }
 </script>
