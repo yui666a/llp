@@ -3,11 +3,11 @@
     <v-col class="text-center">
       Login
       <div>
-        ID {{ id }}
+        ID
         <input v-model="idText" type="text" />
       </div>
       <div>
-        パスワード {{ password }}
+        パスワード
         <input v-model="passwordText" type="text" />
       </div>
       <v-btn color="primary" @click="submit"> ログイン </v-btn>
