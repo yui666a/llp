@@ -1,7 +1,7 @@
 {
   "name": "llp-app",
   "short_name": "llp-app",
-  "description": "## Build Setup",
+  "description": "Nuxt(Vue) Vuetify prettier",
   "icons": [
     {
       "src": "/llp/_nuxt/icons/icon_64x64.e3e9fb.png",
