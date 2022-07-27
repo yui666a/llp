@@ -61,28 +61,28 @@ export default {
         legend: {
           display: false,
         },
-        scales: {
-          xAxes: [
-            {
-              type: 'time',
-              time: {
-                parser: 'mm:ss',
-                unit: 'minute',
-                unitStepSize: 1,
-                displayFormats: {
-                  minute: 'mm',
-                },
-              },
-            },
-          ],
-          yAxes: [
-            {
-              ticks: {
-                beginAtZero: true,
-              },
-            },
-          ],
-        },
+        // scales: {
+        //   xAxes: [
+        //     {
+        //       type: 'time',
+        //       time: {
+        //         parser: 'mm:ss',
+        //         unit: 'minute',
+        //         unitStepSize: 1,
+        //         displayFormats: {
+        //           minute: 'mm',
+        //         },
+        //       },
+        //     },
+        //   ],
+        //   yAxes: [
+        //     {
+        //       ticks: {
+        //         beginAtZero: true,
+        //       },
+        //     },
+        //   ],
+        // },
       },
     }
   },
@@ -93,12 +93,16 @@ export default {
   },
   methods: {
     async getData() {
-      // const id = localStorage.id
+      console.log('000')
       const lineId = localStorage.lineId
+      console.log('001')
       const baseUrl =
         'https://script.google.com/macros/s/AKfycbxPUw73VyxjmzRw96UVsIpuPUlDvI9qFYF4MzpwOecly-KTiQrBv9jwu0sUVZ49b09N/exec'
+      console.log('002')
       const url = `${baseUrl}?type=conditions&lineId=${lineId}`
+      console.log('003')
       const response = await this.$axios.$get(url)
+      console.log('004')
       console.log(response)
     },
     fillData() {
