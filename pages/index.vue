@@ -5,7 +5,7 @@
         <NuxtLogo />
       </v-card>
       <v-card>
-        <v-card-title class="headline"> Welcome </v-card-title>
+        <v-card-title class="headline"> ようこそ </v-card-title>
         <v-card-text> </v-card-text>
         <v-card-actions>
           <!-- <v-spacer /> -->
