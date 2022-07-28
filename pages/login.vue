@@ -44,8 +44,14 @@ export default {
   },
   methods: {
     async submit() {
-      const url = `/gas/macros/s/AKfycbxPUw73VyxjmzRw96UVsIpuPUlDvI9qFYF4MzpwOecly-KTiQrBv9jwu0sUVZ49b09N/exec?type=login&name=${this.id}&pw=${this.password}`
-      const response = await this.$axios.$get(url)
+      // http://localhost:3000/api/exec?type=login&name=${this.id}&pw=${this.password}
+      // gas/macros/s/AKfycbxPUw73VyxjmzRw96UVsIpuPUlDvI9qFYF4MzpwOecly-KTiQrBv9jwu0sUVZ49b09N/exec?type=login&name=${this.id}&pw=${this.password}
+      const params = {
+        // 任意のパラメータ
+        crossDomain: true,
+      }
+      const url = `/api/exec?type=login&name=${this.id}&pw=${this.password}`
+      const response = await this.$axios.$get(url, { params })
       localStorage.displayName = response.data.displayName
       localStorage.id = response.data.id
       localStorage.lineId = response.data.lineId

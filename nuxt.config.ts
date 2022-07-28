@@ -63,6 +63,7 @@ const config: NuxtConfig = {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/proxy',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
@@ -91,12 +92,15 @@ const config: NuxtConfig = {
     proxy: true,
   },
   proxy: {
-    '/gas/': {
-      target: `https://script.google.com`,
-      pathRewrite: {
-        '^/gas/': '',
-      },
+    '/api/': {
+      target:
+        'https://script.google.com/macros/s/AKfycbxPUw73VyxjmzRw96UVsIpuPUlDvI9qFYF4MzpwOecly-KTiQrBv9jwu0sUVZ49b09N',
+      pathRewrite: { '^/api/': '' },
+      followRedirects: true,
     },
+  },
+  server: {
+    host: '0.0.0.0',
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
