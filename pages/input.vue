@@ -25,6 +25,7 @@
 </template>
 
 <script>
+const jsonpAdapter = require('axios-jsonp')
 export default {
   name: 'InspirePage',
   data() {
@@ -43,11 +44,17 @@ export default {
     },
     async confirmCondition() {
       // TODO: ここにDB登録処理を書く
-      const lineId = localStorage.lineId
-      const getUrl = `${this.$GAS_API}?type=input&lineId=${lineId}&mental=${this.mentalConditionNumber}&body=${this.bodyConditionNumber}`
-      const response = await this.$axios.$get(getUrl, {
+      const data = {
+        type: 'input',
+        lineId: localStorage.lineId,
+        mental: this.mentalConditionNumber,
+        body: this.bodyConditionNumber,
+      }
+      const response = await this.$axios.$get(this.$GAS_API, {
         adapter: jsonpAdapter,
+        params: data,
       })
+
       console.log(response)
       this.$router.push('/')
     },

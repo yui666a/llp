@@ -79,10 +79,13 @@ export default {
   },
   methods: {
     async getData() {
-      const lineId = localStorage.lineId
-      const getUrl = `${this.$GAS_API}?type=conditions&lineId=${lineId}`
-      const response = await this.$axios.$get(getUrl, {
+      const data = {
+        type: 'conditions',
+        lineId: localStorage.lineId,
+      }
+      const response = await this.$axios.$get(this.$GAS_API, {
         adapter: jsonpAdapter,
+        params: data,
       })
       console.log(response)
 

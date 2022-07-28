@@ -46,14 +46,16 @@ export default {
   },
   methods: {
     async submit() {
-      // const params = {
-      //   // 任意のパラメータ
-      //   crossDomain: true,
-      // }
-      const getUrl = `${this.$GAS_API}?type=login&name=${this.id}&pw=${this.password}`
-      const response = await this.$axios.$get(getUrl, {
+      const data = {
+        type: 'login',
+        name: this.id,
+        pw: this.password,
+      }
+      const response = await this.$axios.$get(this.$GAS_API, {
         adapter: jsonpAdapter,
+        params: data,
       })
+      console.log(response)
       localStorage.displayName = response.data.displayName
       localStorage.id = response.data.id
       localStorage.lineId = response.data.lineId
