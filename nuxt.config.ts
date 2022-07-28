@@ -84,6 +84,12 @@ const config: NuxtConfig = {
       },
     ],
   },
+  // Axios module configuration: https://go.nuxtjs.dev/config-axios
+  axios: {
+    // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
+    // baseURL:'https://script.google.com/macros/s/AKfycbxPUw73VyxjmzRw96UVsIpuPUlDvI9qFYF4MzpwOecly-KTiQrBv9jwu0sUVZ49b09N/exec',
+    proxy: true,
+  },
   proxy: {
     '/gas/': {
       target: `https://script.google.com`,
@@ -91,13 +97,6 @@ const config: NuxtConfig = {
         '^/gas/': '',
       },
     },
-  },
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {
-    // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    // baseURL:'https://script.google.com/macros/s/AKfycbxPUw73VyxjmzRw96UVsIpuPUlDvI9qFYF4MzpwOecly-KTiQrBv9jwu0sUVZ49b09N/exec',
-    prefix: '/gas/',
-    proxy: true,
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
