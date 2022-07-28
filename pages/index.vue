@@ -1,25 +1,43 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
-      <v-card class="logo py-4 d-flex justify-center">
-        <NuxtLogo />
-      </v-card>
-      <v-card>
-        <v-card-title class="headline"> ようこそ </v-card-title>
-        <v-card-text> </v-card-text>
-        <v-card-actions>
-          <!-- <v-spacer /> -->
-          <!-- <v-btn color="primary" nuxt to="/inspire"> inspire画面へ </v-btn>
-          <v-btn color="primary" nuxt to="/input"> 入力画面へ </v-btn>
-          <v-btn color="primary" nuxt to="/login"> ログイン画面へ </v-btn>
-          <v-btn color="primary" nuxt to="/calendar"> カレンダー画面へ </v-btn>
-          <v-btn color="primary" nuxt to="/condition">
-            コンディショングラフ画面へ
-          </v-btn> -->
-        </v-card-actions>
-      </v-card>
-    </v-col>
-  </v-row>
+  <v-form class="">
+    <v-card color="green lighten-3" class="py-5 my-5">
+      <v-container>
+        <v-row>
+          おはようございます。今日は調子が良さそうですね！色々なことに挑戦しましょう！
+        </v-row>
+      </v-container>
+    </v-card>
+    <v-container>
+      <v-row>
+        <v-col cols="12" class="orange lighten-3 py-5 my-5">
+          <v-btn nuxt to="/calendar" color="amber" elevation="6" x-large>
+            <v-icon x-large>mdi-table-large</v-icon>
+            <div>カレンダー</div>
+          </v-btn>
+        </v-col>
+        <v-col cols="12" class="red lighten-3 py-5 my-5">
+          <v-btn nuxt to="/input" color="red" elevation="6" x-large>
+            <v-icon x-large>mdi-account-heart</v-icon>
+            <div>カラダ・ココロチェック</div>
+          </v-btn>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col cols="12" class="blue lighten-3 py-5 my-5">
+          <v-btn nuxt to="/condition" color="blue" elevation="6" x-large>
+            <v-icon x-large>mdi-chart-bar</v-icon>
+            <div>コンディショングラフ</div>
+          </v-btn>
+        </v-col>
+        <v-col cols="12" class="yellow lighten-3 py-5 my-5">
+          <v-btn color="yellow" elevation="6" x-large>
+            <v-icon x-large>mdi-head-snowflake-outline</v-icon>
+            <div>オートレコメンド</div>
+          </v-btn>
+        </v-col>
+      </v-row>
+    </v-container>
+  </v-form>
 </template>
 
 <script>
