@@ -86,7 +86,7 @@ const config: NuxtConfig = {
   },
   proxy: {
     '/gas/': {
-      target: `https://script.google.com/macros/s/AKfycbxPUw73VyxjmzRw96UVsIpuPUlDvI9qFYF4MzpwOecly-KTiQrBv9jwu0sUVZ49b09N`,
+      target: `https://script.google.com`,
       pathRewrite: {
         '^/gas/': '',
       },
@@ -96,7 +96,7 @@ const config: NuxtConfig = {
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
     // baseURL:'https://script.google.com/macros/s/AKfycbxPUw73VyxjmzRw96UVsIpuPUlDvI9qFYF4MzpwOecly-KTiQrBv9jwu0sUVZ49b09N/exec',
-    // prefix: '/api',
+    prefix: '/gas/',
     proxy: true,
   },
 

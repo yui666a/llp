@@ -100,7 +100,7 @@ export default {
   methods: {
     async getData() {
       const lineId = localStorage.lineId
-      const url = `/gas/exec?type=conditions&lineId=${lineId}`
+      const url = `/gas/macros/s/AKfycbxPUw73VyxjmzRw96UVsIpuPUlDvI9qFYF4MzpwOecly-KTiQrBv9jwu0sUVZ49b09N/exec?type=conditions&lineId=${lineId}`
       const response = await this.$axios.$get(url)
       console.log(response)
     },
