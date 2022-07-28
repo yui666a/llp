@@ -44,9 +44,7 @@ export default {
   },
   methods: {
     async submit() {
-      const baseUrl =
-        'https://script.google.com/macros/s/AKfycbxPUw73VyxjmzRw96UVsIpuPUlDvI9qFYF4MzpwOecly-KTiQrBv9jwu0sUVZ49b09N/exec'
-      const url = `${baseUrl}?type=login&name=${this.id}&pw=${this.password}`
+      const url = `/gas/exec?type=login&name=${this.id}&pw=${this.password}`
       const response = await this.$axios.$get(url)
       localStorage.displayName = response.data.displayName
       localStorage.id = response.data.id
