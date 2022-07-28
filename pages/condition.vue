@@ -73,9 +73,7 @@ export default {
     }
   },
   mounted() {
-    console.log('mounted!')
     this.getData()
-    // this.fillData()
   },
   methods: {
     async getData() {
