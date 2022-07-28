@@ -80,12 +80,7 @@ export default {
   methods: {
     async getData() {
       const lineId = localStorage.lineId
-      // const params = {
-      //   // 任意のパラメータ
-      //   crossDomain: true,
-      // }
       const getUrl = `https://script.google.com/macros/s/AKfycbxPUw73VyxjmzRw96UVsIpuPUlDvI9qFYF4MzpwOecly-KTiQrBv9jwu0sUVZ49b09N/exec?type=conditions&lineId=${lineId}`
-      // const response = await this.$axios.$get(url, { params })
       const response = await this.$axios.$get(getUrl, {
         adapter: jsonpAdapter,
       })
