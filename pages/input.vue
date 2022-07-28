@@ -41,10 +41,14 @@ export default {
       this.mentalConditionNumber =
         event === this.mentalConditionNumber ? 0 : event
     },
-    confirmCondition() {
+    async confirmCondition() {
       // TODO: ここにDB登録処理を書く
       console.log(`mentalConditionNumber: ${this.mentalConditionNumber}`)
       console.log(`bodyConditionNumber: ${this.bodyConditionNumber}`)
+      const lineId = localStorage.lineId
+      const url = `/gas/macros/s/AKfycbxPUw73VyxjmzRw96UVsIpuPUlDvI9qFYF4MzpwOecly-KTiQrBv9jwu0sUVZ49b09N/exec?type=input&lineId=${lineId}&mental=${this.mentalConditionNumber}&body=${this.bodyConditionNumber}`
+      const response = await this.$axios.$get(url)
+      console.log(response)
       this.$router.push('/')
     },
   },

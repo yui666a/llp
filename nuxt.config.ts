@@ -23,8 +23,8 @@ const config: NuxtConfig = {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - llp-app',
-    title: 'llp-app',
+    titleTemplate: '%s - ハリンタ',
+    title: 'ハリンタ',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -32,7 +32,11 @@ const config: NuxtConfig = {
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: `${env.BASE_URL}favicon.ico` },
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: `${env.BASE_URL}favicon.ico`,
+      },
     ],
   },
 
@@ -80,11 +84,20 @@ const config: NuxtConfig = {
       },
     ],
   },
-
+  proxy: {
+    '/gas/': {
+      target: `https://script.google.com`,
+      pathRewrite: {
+        '^/gas/': '',
+      },
+    },
+  },
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/',
+    // baseURL:'https://script.google.com/macros/s/AKfycbxPUw73VyxjmzRw96UVsIpuPUlDvI9qFYF4MzpwOecly-KTiQrBv9jwu0sUVZ49b09N/exec',
+    prefix: '/gas/',
+    proxy: true,
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa

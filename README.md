@@ -1,4 +1,8 @@
-# llp-app
+# ハリンタ
+
+Nuxt(Vue)
+Vuetify
+prettier
 
 ## Build Setup
 

@@ -37,16 +37,18 @@
       </v-btn> -->
       <v-toolbar-title v-text="title" />
       <v-spacer />
-      <v-btn icon @click.stop="rightDrawer = !rightDrawer">
+      <div v-if="displayName">{{ displayName }}さん</div>
+      <!-- <v-spacer /> -->
+      <!-- <v-btn icon @click.stop="rightDrawer = !rightDrawer">
         <v-icon>mdi-menu</v-icon>
-      </v-btn>
+      </v-btn> -->
     </v-app-bar>
     <v-main>
       <v-container>
         <Nuxt />
       </v-container>
     </v-main>
-    <v-navigation-drawer v-model="rightDrawer" :right="right" temporary fixed>
+    <!-- <v-navigation-drawer v-model="rightDrawer" :right="right" temporary fixed>
       <v-list>
         <v-list-item @click.native="right = !right">
           <v-list-item-action>
@@ -55,7 +57,7 @@
           <v-list-item-title>Switch drawer (click me)</v-list-item-title>
         </v-list-item>
       </v-list>
-    </v-navigation-drawer>
+    </v-navigation-drawer> -->
     <v-footer :absolute="!fixed" app>
       <!-- <span>&copy; {{ new Date().getFullYear() }}</span> -->
       <v-list-item
@@ -82,6 +84,7 @@ export default {
       clipped: false,
       drawer: false,
       fixed: false,
+      displayName: localStorage.displayName ? localStorage.displayName : '',
       items: [
         {
           icon: 'mdi-home',
@@ -119,6 +122,32 @@ export default {
       rightDrawer: false,
       title: 'ハリンタ',
     }
+  },
+  mounted() {
+    this.ls_event_handle = window.addEventListener('storage', this.eventMethod)
+  },
+  // destroyed() {
+  //   window.removeEventListener(this.ls_event_handle)
+  // },
+  methods: {
+    eventMethod(event) {
+      console.log(event)
+      const newVal = event.newValue
+      const oldVal = event.oldValue
+      switch (event.key) {
+        case LOCALSTORAGEKEY1:
+          console.log(newVal)
+          break
+
+        case LOCALSTORAGEKEY2:
+          console.log(oldVal)
+          break
+
+        default:
+          console.log(event.key)
+          break
+      }
+    },
   },
 }
 </script>
