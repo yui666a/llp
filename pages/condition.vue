@@ -22,19 +22,25 @@ export default {
       chartdata: {
         datacollection: {
           labels: [
-            '2021-08-02T09:30:22.710731+09:00',
-            '2021-08-02T11:10:22.710731+09:00',
-            '2021-08-02T13:00:22.710731+09:00',
-            '2021-08-02T15:00:22.710731+09:00',
-            '2021-08-02T18:30:22.710731+09:00',
-            '2021-08-02T19:50:22.710731+09:00',
+            '2021-08-02 09:30',
+            '2021-08-02 11:10',
+            '2021-08-02 13:00',
+            '2021-08-02 15:00',
+            '2021-08-02 18:30',
+            '2021-08-02 19:50',
           ],
           datasets: [
             {
-              label: '気温',
-              data: [24.6, 26.8, 22.1, 28.5, 32.8, 29.0],
+              label: 'ココロ',
+              data: [3, 3, 4, 3, 2, 4],
               borderColor: 'rgba(255, 99, 132, 1)',
               backgroundColor: 'rgba(255, 99, 132, 0.1)',
+            },
+            {
+              label: 'カラダ',
+              data: [4, 4, 3, 3, 2, 4],
+              borderColor: 'rgba(132, 99, 255, 1)',
+              backgroundColor: 'rgba(132, 99, 255, 0.1)',
             },
           ],
 
@@ -93,16 +99,11 @@ export default {
   },
   methods: {
     async getData() {
-      console.log('000')
       const lineId = localStorage.lineId
-      console.log('001')
       const baseUrl =
         'https://script.google.com/macros/s/AKfycbxPUw73VyxjmzRw96UVsIpuPUlDvI9qFYF4MzpwOecly-KTiQrBv9jwu0sUVZ49b09N/exec'
-      console.log('002')
       const url = `${baseUrl}?type=conditions&lineId=${lineId}`
-      console.log('003')
       const response = await this.$axios.$get(url)
-      console.log('004')
       console.log(response)
     },
     fillData() {

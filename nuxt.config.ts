@@ -89,7 +89,16 @@ const config: NuxtConfig = {
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
     baseURL: '/',
+    prefix: '/api',
     proxy: true,
+  },
+  proxy: {
+    '/api/': {
+      target: `https://script.google.com/macros/s/AKfycbxPUw73VyxjmzRw96UVsIpuPUlDvI9qFYF4MzpwOecly-KTiQrBv9jwu0sUVZ49b09N/exec`,
+      pathRewrite: {
+        '^/api/': '',
+      },
+    },
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
