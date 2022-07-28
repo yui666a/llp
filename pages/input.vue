@@ -44,7 +44,7 @@ export default {
     async confirmCondition() {
       // TODO: ここにDB登録処理を書く
       const lineId = localStorage.lineId
-      const getUrl = `https://script.google.com/macros/s/AKfycbxPUw73VyxjmzRw96UVsIpuPUlDvI9qFYF4MzpwOecly-KTiQrBv9jwu0sUVZ49b09N/exec?type=input&lineId=${lineId}&mental=${this.mentalConditionNumber}&body=${this.bodyConditionNumber}`
+      const getUrl = `${this.$GAS_API}?type=input&lineId=${lineId}&mental=${this.mentalConditionNumber}&body=${this.bodyConditionNumber}`
       const response = await this.$axios.$get(getUrl, {
         adapter: jsonpAdapter,
       })

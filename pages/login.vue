@@ -46,14 +46,11 @@ export default {
   },
   methods: {
     async submit() {
-      // http://localhost:3000/api/exec?type=login&name=${this.id}&pw=${this.password}
-      // gas/macros/s/AKfycbxPUw73VyxjmzRw96UVsIpuPUlDvI9qFYF4MzpwOecly-KTiQrBv9jwu0sUVZ49b09N/exec?type=login&name=${this.id}&pw=${this.password}
       // const params = {
       //   // 任意のパラメータ
       //   crossDomain: true,
       // }
-      const getUrl = `https://script.google.com/macros/s/AKfycbxPUw73VyxjmzRw96UVsIpuPUlDvI9qFYF4MzpwOecly-KTiQrBv9jwu0sUVZ49b09N/exec?type=login&name=${this.id}&pw=${this.password}`
-      // const response = await this.$axios.$get(url, { params })
+      const getUrl = `${this.$GAS_API}?type=login&name=${this.id}&pw=${this.password}`
       const response = await this.$axios.$get(getUrl, {
         adapter: jsonpAdapter,
       })
