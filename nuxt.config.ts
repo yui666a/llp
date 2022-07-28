@@ -35,7 +35,7 @@ const config: NuxtConfig = {
       {
         rel: 'icon',
         type: 'image/x-icon',
-        href: `${env.BASE_URL}hallinta_logo.ico`,
+        href: `${env.BASE_URL}favicon.ico`,
       },
     ],
   },
