@@ -16,18 +16,20 @@
 import { Line as LineChart } from 'vue-chartjs/legacy'
 import {
   Chart as ChartJS,
+  registerables,
+  // LineController,
+  // LineElement,
+  // PointElement,
+  // LinearScale,
+  // Title,
+  //
   // ChartConfiguration,
-  LineController,
-  LineElement,
-  PointElement,
-  LinearScale,
-  Title,
   // Tooltip,
   // Legend,
   // CategoryScale,
 } from 'chart.js'
 
-ChartJS.register(LineController, LineElement, PointElement, LinearScale, Title)
+ChartJS.register(...registerables)
 
 export default {
   name: 'LineConditionChart',
