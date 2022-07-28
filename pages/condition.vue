@@ -105,26 +105,38 @@ export default {
       console.log(response)
     },
     fillData() {
-      this.datacollection = {
-        labels: [this.getRandomInt(), this.getRandomInt()],
-        datasets: [
-          {
-            label: 'Test Data1',
-            backgroundColor: 'rgba(255, 100, 130, 0.2)',
-            data: [this.getRandomInt(), this.getRandomInt()],
-          },
-          {
-            label: 'Test Data2',
-            backgroundColor: 'rgba(100, 130, 255, 0.2)',
-            data: [this.getRandomInt(), this.getRandomInt()],
-          },
-          {
-            label: 'Test Data3',
-            backgroundColor: 'rgba(130, 255, 100, 0.2)',
-            data: [this.getRandomInt(), this.getRandomInt()],
-          },
-        ],
-      }
+      console.log('before fillData')
+      console.log(this.chartdata.datacollection.datasets[0].data)
+      this.chartdata.datacollection.datasets[0].data = [
+        Math.floor(Math.random() * 10),
+        Math.floor(Math.random() * 10),
+        Math.floor(Math.random() * 10),
+        Math.floor(Math.random() * 10),
+        Math.floor(Math.random() * 10),
+        Math.floor(Math.random() * 10),
+      ]
+      console.log('after fillData')
+      console.log(this.chartdata.datacollection.datasets[0].data)
+      // this.datacollection = {
+      //   labels: [this.getRandomInt(), this.getRandomInt()],
+      //   datasets: [
+      //     {
+      //       label: 'Test Data1',
+      //       backgroundColor: 'rgba(255, 100, 130, 0.2)',
+      //       data: [this.getRandomInt(), this.getRandomInt()],
+      //     },
+      //     {
+      //       label: 'Test Data2',
+      //       backgroundColor: 'rgba(100, 130, 255, 0.2)',
+      //       data: [this.getRandomInt(), this.getRandomInt()],
+      //     },
+      //     {
+      //       label: 'Test Data3',
+      //       backgroundColor: 'rgba(130, 255, 100, 0.2)',
+      //       data: [this.getRandomInt(), this.getRandomInt()],
+      //     },
+      //   ],
+      // }
     },
     getRandomInt() {
       return Math.floor(Math.random() * (50 - 5 + 1)) + 5
