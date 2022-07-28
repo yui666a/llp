@@ -1,12 +1,8 @@
 <template>
   <v-row>
     <v-col class="text-center">
-      <v-calendar
-        ref="calendar"
-        :events="events"
-        :event-color="getEventColor"
-        @change="getEvents"
-      />
+      <v-calendar ref="calendar" :events="events" />
+      <!-- :event-color="getEventColor" @change="getEvents" -->
     </v-col>
   </v-row>
 </template>
@@ -18,6 +14,7 @@ export default {
     return {
       mentalConditionNumber: 0,
       bodyConditionNumber: 0,
+      events: [],
     }
   },
   methods: {
