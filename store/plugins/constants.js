@@ -4,9 +4,10 @@ const IPA = {
   sa: 'システムアーキテクト試験',
   nw: 'ネットワークスペシャリスト試験',
   db: 'データベーススペシャリスト試験',
-  pm: 'プロジェクトマネージャ試験'
+  pm: 'プロジェクトマネージャ試験',
 }
-const GAS_API ="https://script.google.com/macros/s/AKfycbxPUw73VyxjmzRw96UVsIpuPUlDvI9qFYF4MzpwOecly-KTiQrBv9jwu0sUVZ49b09N/exec"
+const GAS_API =
+  'https://script.google.com/macros/s/AKfycbxPUw73VyxjmzRw96UVsIpuPUlDvI9qFYF4MzpwOecly-KTiQrBv9jwu0sUVZ49b09N/exec'
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default (context, inject) => {
