@@ -57,7 +57,7 @@
     </v-container>
     <v-container>
       <v-simple-table fixed-header height="400px">
-        <template>
+        <div>
           <thead>
             <tr>
               <th class="text-left">TO DO</th>
@@ -95,7 +95,7 @@
               </td>
             </tr>
           </tbody>
-        </template>
+        </div>
       </v-simple-table>
     </v-container>
   </div>

@@ -1,4 +1,3 @@
-
 export const state = () => ({
   todoList: [
     // {
@@ -14,9 +13,7 @@ export const state = () => ({
     { id: 2, label: 'RESOLVED' },
     { id: 3, label: 'COMPLETED' },
   ],
-
 })
-
 
 export const mutations = {
   insert(state, obj) {
@@ -78,5 +75,4 @@ export const mutations = {
       }
     }
   },
-
 }
