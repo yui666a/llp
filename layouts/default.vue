@@ -58,7 +58,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer> -->
-    <v-footer :absolute="!fixed" app>
+    <v-footer fixed app>
       <!-- <span>&copy; {{ new Date().getFullYear() }}</span> -->
       <v-list-item
         v-for="(item, i) in items"
