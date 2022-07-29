@@ -17,8 +17,6 @@
 </template>
 
 <script>
-const jsonpAdapter = require('axios-jsonp')
-
 export default {
   name: 'CalendarPage',
   data() {
