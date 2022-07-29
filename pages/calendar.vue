@@ -26,13 +26,8 @@ export default {
       events: [
         {
           name: '打合せ',
-          start: '2022-07-29 09:00',
-          end: '2022-07-29 12:00',
-        },
-        {
-          name: '打合せ',
-          start: '2022-07-29 09:00',
-          end: '2022-07-29 12:00',
+          start: '2022-07-29',
+          end: '2022-07-30',
         },
       ],
       type: 'month',
@@ -45,7 +40,49 @@ export default {
   methods: {
     async getData() {
       const res = await this.$axios.$get('/basic.ics')
-      console.log(res)
+      res.split('BEGIN:VEVENT').forEach((item) => {
+        if (item.includes('END:VEVENT')) {
+          const event = item.split('END:VEVENT')[0]
+          const name = event.split('SUMMARY:')[1].split('\n')[0]
+          const startStr = event
+            .split('DTSTART')[1]
+            .split('\n')[0]
+            // .replace(/([a-zA-Z])/g, '')
+            .replace(/[^0-9]/g, '')
+
+          let year = startStr.substring(0, 4)
+          let month = startStr.substring(4, 6)
+          let day = startStr.substring(6, 8)
+          let start = year + '-' + month + '-' + day
+          if (startStr.length !== 8) {
+            const hour = startStr.substring(8, 10)
+            const min = startStr.substring(10, 12)
+            start = year + '-' + month + '-' + day + ' ' + hour + ':' + min
+          }
+
+          const endStr = event
+            .split('DTEND')[1]
+            .split('\n')[0]
+            // .replace(/([a-zA-Z])/g, '')
+            .replace(/[^0-9]/g, '')
+          year = endStr.substring(0, 4)
+          month = endStr.substring(4, 6)
+          day = endStr.substring(6, 8)
+          let end = year + '-' + month + '-' + day
+          if (endStr.length !== 8) {
+            const hour = endStr.substring(8, 10)
+            const min = endStr.substring(10, 12)
+            end = year + '-' + month + '-' + day + ' ' + hour + ':' + min
+          }
+
+          this.events.push({
+            name,
+            start,
+            end,
+            color: 'purple',
+          })
+        }
+      })
     },
     // async asyncData() {
     //   const mockAdapter = function mockAdapter() {
