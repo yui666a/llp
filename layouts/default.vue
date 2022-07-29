@@ -112,6 +112,11 @@ export default {
           to: '/condition',
         },
         {
+          icon: 'mdi-format-list-checks',
+          title: 'TODOリスト',
+          to: '/todo',
+        },
+        {
           icon: 'mdi-login-variant',
           title: 'ログイン',
           to: '/login',
