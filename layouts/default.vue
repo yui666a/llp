@@ -38,6 +38,10 @@
       <v-toolbar-title v-text="title" />
       <v-spacer />
       <div v-if="displayName">{{ displayName }}さん</div>
+      <nuxt-link v-else color="primary" to="/login">
+        <v-icon>{{ 'mdi-login-variant' }}</v-icon>
+      </nuxt-link>
+
       <!-- <v-spacer /> -->
       <!-- <v-btn icon @click.stop="rightDrawer = !rightDrawer">
         <v-icon>mdi-menu</v-icon>
@@ -116,11 +120,11 @@ export default {
           title: 'TODOリスト',
           to: '/todo',
         },
-        {
-          icon: 'mdi-login-variant',
-          title: 'ログイン',
-          to: '/login',
-        },
+        // {
+        //   icon: 'mdi-login-variant',
+        //   title: 'ログイン',
+        //   to: '/login',
+        // },
       ],
       miniVariant: false,
       right: true,
