@@ -1,6 +1,6 @@
 <template>
   <div>
-    <video src="/holo.mp4" loop autoplay muted class="holo"></video>
+    <video :src="`${base}holo.mp4`" loop autoplay muted class="holo"></video>
     おはようございます。今日は調子が良さそうですね！色々なことに挑戦しましょう！
 
     <!-- <Artwork /> -->
@@ -68,8 +68,16 @@ export default {
   //   // eslint-disable-next-line object-shorthand
   //   '$route.name': function (_new, _old) {},
   // },
+  data() {
+    return {
+      base: '',
+    }
+  },
   mounted() {
     // this.init()
+    const environment = process.env.NODE_ENV || 'local'
+    const env = require(`../env/${environment}.ts`)
+    this.base = env.BASE_URL
   },
 }
 </script>
