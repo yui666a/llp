@@ -48,26 +48,26 @@
 </template>
 
 <script>
-import Artwork from '~/components/Artwork'
+// import Artwork from '~/components/Artwork'
 
 export default {
   name: 'IndexPage',
-  components: {
-    Artwork,
-  },
-  head() {
-    return {
-      title: 'Payment Page - My awesome project', // Other meta information
-      // script: [
-      //   { hid: 'stripe', src: '', defer: true }
-      // ]
-    }
-  },
-  watch: {
-    // routeが変わるときにシーンを変えるなどなにか処理する
-    // eslint-disable-next-line object-shorthand
-    '$route.name': function (_new, _old) {},
-  },
+  // components: {
+  //   Artwork,
+  // },
+  // head() {
+  //   return {
+  //     title: 'Payment Page - My awesome project', // Other meta information
+  //     // script: [
+  //     //   { hid: 'stripe', src: '', defer: true }
+  //     // ]
+  //   }
+  // },
+  // watch: {
+  //   // routeが変わるときにシーンを変えるなどなにか処理する
+  //   // eslint-disable-next-line object-shorthand
+  //   '$route.name': function (_new, _old) {},
+  // },
   mounted() {
     // this.init()
   },
