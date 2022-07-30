@@ -1,7 +1,7 @@
 <template>
   <v-row>
     <v-col class="text-center">
-      <div>カラダ{{ bodyConditionNumber }}</div>
+      <div>カラダ</div>
       <span v-for="n of 5" :key="`body ${n}`">
         <font-awesome
           :icon="['fas', 'star']"
@@ -9,7 +9,7 @@
           @click="onClickBodyCondition(n)"
         />
       </span>
-      <div>ココロ{{ mentalConditionNumber }}</div>
+      <div>ココロ</div>
       <span v-for="n of 5" :key="`mental ${n}`">
         <font-awesome
           :icon="['fas', 'star']"

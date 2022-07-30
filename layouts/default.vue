@@ -90,25 +90,26 @@ export default {
       fixed: false,
       displayName: localStorage.displayName ? localStorage.displayName : '',
       items: [
-        {
-          icon: 'mdi-home',
-          title: 'Home',
-          to: '/',
-        },
         // {
         //   icon: 'mdi-chart-bubble',
         //   title: 'Inspire',
         //   to: '/inspire',
         // },
-        {
-          icon: 'mdi-heart',
-          title: 'コンディションの入力',
-          to: '/input',
-        },
+
         {
           icon: 'mdi-calendar',
           title: 'カレンダー',
           to: '/calendar',
+        },
+        {
+          icon: 'mdi-format-list-checks',
+          title: 'TODOリスト',
+          to: '/todo',
+        },
+        {
+          icon: 'mdi-home',
+          title: 'Home',
+          to: '/',
         },
         {
           icon: 'mdi-chart-areaspline',
@@ -116,9 +117,9 @@ export default {
           to: '/condition',
         },
         {
-          icon: 'mdi-format-list-checks',
-          title: 'TODOリスト',
-          to: '/todo',
+          icon: 'mdi-heart',
+          title: 'コンディションの入力',
+          to: '/input',
         },
         // {
         //   icon: 'mdi-login-variant',
@@ -165,7 +166,12 @@ export default {
 #app {
   height: 100vh;
 }
+
 .footer-item {
   flex: none;
+}
+
+.v-footer {
+  justify-content: space-evenly;
 }
 </style>

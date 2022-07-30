@@ -7,9 +7,9 @@
         :chart-data="chartdata.datacollection"
         :chart-options="options"
       />
-      <div class="text-center">
+      <!-- <div class="text-center">
         <v-btn depressed small @click="getData">更新</v-btn>
-      </div>
+      </div> -->
     </v-col>
   </v-row>
 </template>
@@ -28,6 +28,7 @@ export default {
             {
               label: 'ココロ',
               data: [],
+              fillColor: 'rgb(220 220 220 /0.2)',
               borderColor: 'rgba(255, 99, 132, 1)',
               backgroundColor: 'rgba(255, 99, 132, 0.1)',
             },
