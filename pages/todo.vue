@@ -2,13 +2,17 @@
   <div>
     <Header />
     <v-container>
-      <h2>TO DO List</h2>
+      <h2>やることリスト</h2>
     </v-container>
     <v-container>
       <v-form>
         <v-row align="center">
           <v-col class="d-flex" cols="12" sm="6">
-            <v-text-field v-model="content" label="the thing to do" required>
+            <v-text-field
+              v-model="content"
+              label="やること・やりたいこと"
+              required
+            >
             </v-text-field>
           </v-col>
         </v-row>
@@ -17,14 +21,14 @@
             <v-select
               v-model="selectCat"
               :items="cats"
-              label="Category"
+              label="カテゴリー"
               style="width: 250px"
               required
             >
             </v-select>
           </v-col>
           <v-col class="d-flex" cols="12" sm="6">
-            <v-btn class="primary" @click="insert">ADD</v-btn>
+            <v-btn class="primary" @click="insert">追加</v-btn>
           </v-col>
         </v-row>
       </v-form>
