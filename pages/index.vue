@@ -1,5 +1,12 @@
 <template>
-  <v-form class="">
+  <div>
+    <video src="/holo.mp4" loop autoplay muted class="holo"></video>
+    おはようございます。今日は調子が良さそうですね！色々なことに挑戦しましょう！
+
+    <!-- <Artwork /> -->
+    <!-- <div id="container"></div> -->
+  </div>
+  <!-- <v-form class="">
     <v-card color="green lighten-3" class="py-5 my-5">
       <v-container>
         <v-row>
@@ -37,11 +44,39 @@
         </v-col>
       </v-row>
     </v-container>
-  </v-form>
+  </v-form> -->
 </template>
 
 <script>
+import Artwork from '~/components/Artwork'
+
 export default {
   name: 'IndexPage',
+  components: {
+    Artwork,
+  },
+  head() {
+    return {
+      title: 'Payment Page - My awesome project', // Other meta information
+      // script: [
+      //   { hid: 'stripe', src: '', defer: true }
+      // ]
+    }
+  },
+  watch: {
+    // routeが変わるときにシーンを変えるなどなにか処理する
+    // eslint-disable-next-line object-shorthand
+    '$route.name': function (_new, _old) {},
+  },
+  mounted() {
+    // this.init()
+  },
 }
 </script>
+
+<style scoped>
+.holo {
+  width: 100vw;
+  height: 100vw;
+}
+</style>
