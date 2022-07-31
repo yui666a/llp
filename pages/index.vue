@@ -91,6 +91,15 @@ export default {
 </script>
 
 <style scoped>
+video {
+  /* iPhone safariの枠線を消す */
+  filter: drop-shadow(0 0 rgb(0 0 0/ 0%));
+
+  /* PCのChromeの枠線を消す */
+  outline: none;
+  border: none;
+}
+
 .holo {
   width: 100vw;
   height: 100vw;
