@@ -1,14 +1,27 @@
 <template>
   <v-row>
     <v-col class="text-center">
-      <v-btn @click="onclickTypeButton('month')"> 月 </v-btn>
-      <v-btn @click="onclickTypeButton('week')"> 週 </v-btn>
-      <v-btn @click="onclickTypeButton('day')"> 日 </v-btn>
-      <v-spacer />
+      <div class="select-button-wrapper">
+        <v-btn @click="onclickTypeButton('month')"> 月 </v-btn>
+        <v-btn @click="onclickTypeButton('week')"> 週 </v-btn>
+        <v-btn @click="onclickTypeButton('4day')"> 4日 </v-btn>
+        <v-btn @click="onclickTypeButton('day')"> 日 </v-btn>
+      </div>
+      <div class="select-button-wrapper">
+        <v-btn icon @click="$refs.calendar.prev()">
+          <v-icon>mdi-chevron-left</v-icon>
+        </v-btn>
+        <v-toolbar-title>{{ title }}</v-toolbar-title>
+        <v-btn icon @click="$refs.calendar.next()">
+          <v-icon>mdi-chevron-right</v-icon>
+        </v-btn>
+      </div>
       <v-calendar
         ref="calendar"
+        v-model="value"
         :type="type"
         :events="events"
+        :event-color="getEventColor"
         @change="changeColor"
       />
       <!-- @change="fetchEvents" :event-color="getEventColor" @change="getEvents" -->
@@ -17,10 +30,13 @@
 </template>
 
 <script>
+import moment from 'moment'
+
 export default {
   name: 'CalendarPage',
   data() {
     return {
+      value: moment().format('yyyy-MM-DD'), // 現在日時
       events: [
         {
           name: '打合せ',
@@ -28,9 +44,16 @@ export default {
           end: '2022-07-30',
         },
       ],
-      type: 'month',
+      // type: 'month',
+      type: '4day',
     }
   },
+  computed: {
+    title() {
+      return moment(this.value).format('yyyy年 M月') // 表示用文字列を返す
+    },
+  },
+
   mounted() {
     this.getData()
     // this.asyncData()
@@ -177,5 +200,10 @@ export default {
 
 .sunday {
   background: rgb(255 0 0 / 10%);
+}
+
+.select-button-wrapper {
+  margin-bottom: 5px;
+  display: flex;
 }
 </style>
