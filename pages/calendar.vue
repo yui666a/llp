@@ -59,11 +59,16 @@ export default {
     const environment = process.env.NODE_ENV || 'local'
     const env = require(`../env/${environment}.ts`)
     // this.base = env.BASE_URL
+    if (this.$store.state.calendar.calendars.length === 0) {
+      // this.$store.dispatch('calendar/fetchCalendars')
+      this.getData(`${env.BASE_URL}ilias.ics`, 'purple')
+      this.getData(`${env.BASE_URL}aiso.ics`, 'blue')
+      this.getData(`${env.BASE_URL}work.ics`, 'yellow')
+      this.getData(`${env.BASE_URL}school.ics`, 'green')
+    } else {
+      this.events = this.$store.state.calendar.calendars
+    }
 
-    this.getData(`${env.BASE_URL}ilias.ics`, 'purple')
-    this.getData(`${env.BASE_URL}aiso.ics`, 'blue')
-    this.getData(`${env.BASE_URL}work.ics`, 'yellow')
-    this.getData(`${env.BASE_URL}school.ics`, 'green')
     // this.asyncData()
   },
   methods: {
