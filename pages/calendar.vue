@@ -22,9 +22,9 @@
         :type="type"
         :events="events"
         :event-color="getEventColor"
-        @change="changeColor"
       />
-      <!-- @change="fetchEvents" :event-color="getEventColor" @change="getEvents" -->
+      <!--@change="changeColor"
+       @change="fetchEvents" :event-color="getEventColor" @change="getEvents" -->
     </v-col>
   </v-row>
 </template>
@@ -50,17 +50,29 @@ export default {
   },
   computed: {
     title() {
-      return moment(this.value).format('yyyy年 M月') // 表示用文字列を返す
+      return moment(this.value).format('yyyy年 M月 D日') // 表示用文字列を返す
     },
   },
 
   mounted() {
-    this.getData()
+    // this.init()
+    const environment = process.env.NODE_ENV || 'local'
+    const env = require(`../env/${environment}.ts`)
+    // this.base = env.BASE_URL
+
+    this.getData(`${env.BASE_URL}ilias.ics`, 'purple')
+    this.getData(`${env.BASE_URL}aiso.ics`, 'blue')
+    this.getData(`${env.BASE_URL}work.ics`, 'yellow')
+    this.getData(`${env.BASE_URL}school.ics`, 'green')
     // this.asyncData()
   },
   methods: {
-    async getData() {
-      const res = await this.$axios.$get('/basic.ics')
+    getEventColor(event) {
+      return event.color
+    },
+
+    async getData(icsFile, color) {
+      const res = await this.$axios.$get(icsFile)
       res.split('BEGIN:VEVENT').forEach((item) => {
         if (item.includes('END:VEVENT')) {
           const event = item.split('END:VEVENT')[0]
@@ -100,36 +112,11 @@ export default {
             name,
             start,
             end,
-            color: 'purple',
+            color,
           })
         }
       })
     },
-    // async asyncData() {
-    //   const mockAdapter = function mockAdapter() {
-    //     return new Promise(function (resolve) {
-    //       const res = {
-    //         data: 'HOGE',
-    //         status: 200,
-    //       }
-    //       resolve(res)
-    //     })
-    //   }
-
-    //   const response = await this.$axios.$get(
-    //     'https://calendar.google.com/calendar/ical/nqbvi1bi1gs38of5k1sjj7ijvg%40group.calendar.google.com/private-721ada7985bea7ab3480a4c7d165e2cc/basic.ics',
-    //     // 'https://cera-e1.nagaokaut.ac.jp/ilias/calendar.php?client_id=contents1&token=f64945fb5d36d84f2fe5e3ffabb55eff',
-    //     {
-    //       headers: {
-    //         'Content-Type': 'text/calendar',
-    //         Accept: 'text/calendar',
-    //         'Access-Control-Allow-Origin': '*',
-    //       },
-    //       responseType: 'text',
-    //       adapter: jsonpAdapter,
-    //     }
-    //   )
-    // },
     onclickTypeButton(event) {
       this.type = event
     },

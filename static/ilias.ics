@@ -1,0 +1,1478 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+METHOD:PUBLISH
+PRODID:-//ilias.de/NONSGML ILIAS Calendar V4.4//EN
+X-WR-TIMEZONE:Asia/Tokyo
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Japan
+BEGIN:STANDARD
+TZOFFSETFROM:+1000
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:19490910T020000
+RRULE:FREQ=YEARLY;BYMONTH=9;BYDAY=2SA;UNTIL=19510909T235959Z
+END:STANDARD
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0900
+TZOFFSETTO:+1000
+TZNAME:JDT
+DTSTART:19500507T010000
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20220731T090502Z
+UID:42220_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220329T054426Z
+DTSTART;TZID=Asia/Tokyo:20220411T103000
+DTEND;TZID=Asia/Tokyo:20220411T120000
+RRULE:FREQ=WEEKLY;INTERVAL=1;UNTIL=20220725T103000;BYDAY=MO;WKST=SU
+SUMMARY:エネルギー経済論
+LOCATION:https://zoom.us/j/92346830785?pwd=aU04Ti9tSGNPdGRHVkxRUUxKNnNVUT0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_45
+ 33&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090502Z
+UID:23153_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20210405T060411Z
+DTSTART;TZID=Asia/Tokyo:20210412T144000
+DTEND;TZID=Asia/Tokyo:20210412T161000
+RRULE:FREQ=WEEKLY;INTERVAL=1;UNTIL=20210802T144000;BYDAY=MO;WKST=SU
+SUMMARY:グループウェア特論/Advanced Groupware
+LOCATION:https://zoom.us/j/91939278693?pwd=RDJQLzVrWlhHWWptR3dBWENWalFrdz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_93
+ 05&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:41297_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220326T045906Z
+DTSTART;TZID=Asia/Tokyo:20220411T144000
+DTEND;TZID=Asia/Tokyo:20220411T161000
+SUMMARY:グループウェア特論
+LOCATION:https://zoom.us/j/92037528009?pwd=c1dPQ3NwNHhaK0tjTTBIcmFMMnV5dz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_93
+ 05&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:41298_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220326T045913Z
+DTSTART;TZID=Asia/Tokyo:20220418T144000
+DTEND;TZID=Asia/Tokyo:20220418T161000
+SUMMARY:グループウェア特論
+LOCATION:https://zoom.us/j/92037528009?pwd=c1dPQ3NwNHhaK0tjTTBIcmFMMnV5dz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_93
+ 05&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:41299_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220326T045920Z
+DTSTART;TZID=Asia/Tokyo:20220425T144000
+DTEND;TZID=Asia/Tokyo:20220425T161000
+SUMMARY:グループウェア特論
+LOCATION:https://zoom.us/j/92037528009?pwd=c1dPQ3NwNHhaK0tjTTBIcmFMMnV5dz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_93
+ 05&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:41300_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220326T045927Z
+DTSTART;TZID=Asia/Tokyo:20220502T144000
+DTEND;TZID=Asia/Tokyo:20220502T161000
+SUMMARY:グループウェア特論
+LOCATION:https://zoom.us/j/92037528009?pwd=c1dPQ3NwNHhaK0tjTTBIcmFMMnV5dz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_93
+ 05&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:41301_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220326T045934Z
+DTSTART;TZID=Asia/Tokyo:20220509T144000
+DTEND;TZID=Asia/Tokyo:20220509T161000
+SUMMARY:グループウェア特論
+LOCATION:https://zoom.us/j/92037528009?pwd=c1dPQ3NwNHhaK0tjTTBIcmFMMnV5dz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_93
+ 05&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:41302_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220326T045941Z
+DTSTART;TZID=Asia/Tokyo:20220516T144000
+DTEND;TZID=Asia/Tokyo:20220516T161000
+SUMMARY:グループウェア特論
+LOCATION:https://zoom.us/j/92037528009?pwd=c1dPQ3NwNHhaK0tjTTBIcmFMMnV5dz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_93
+ 05&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:41303_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220326T045948Z
+DTSTART;TZID=Asia/Tokyo:20220523T144000
+DTEND;TZID=Asia/Tokyo:20220523T161000
+SUMMARY:グループウェア特論
+LOCATION:https://zoom.us/j/92037528009?pwd=c1dPQ3NwNHhaK0tjTTBIcmFMMnV5dz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_93
+ 05&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:41304_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220326T045955Z
+DTSTART;TZID=Asia/Tokyo:20220530T144000
+DTEND;TZID=Asia/Tokyo:20220530T161000
+SUMMARY:グループウェア特論
+LOCATION:https://zoom.us/j/92037528009?pwd=c1dPQ3NwNHhaK0tjTTBIcmFMMnV5dz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_93
+ 05&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:41305_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220326T050002Z
+DTSTART;TZID=Asia/Tokyo:20220606T144000
+DTEND;TZID=Asia/Tokyo:20220606T161000
+SUMMARY:グループウェア特論
+LOCATION:https://zoom.us/j/92037528009?pwd=c1dPQ3NwNHhaK0tjTTBIcmFMMnV5dz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_93
+ 05&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:41306_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220326T050009Z
+DTSTART;TZID=Asia/Tokyo:20220613T144000
+DTEND;TZID=Asia/Tokyo:20220613T161000
+SUMMARY:グループウェア特論
+LOCATION:https://zoom.us/j/92037528009?pwd=c1dPQ3NwNHhaK0tjTTBIcmFMMnV5dz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_93
+ 05&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:41307_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220326T050016Z
+DTSTART;TZID=Asia/Tokyo:20220620T144000
+DTEND;TZID=Asia/Tokyo:20220620T161000
+SUMMARY:グループウェア特論
+LOCATION:https://zoom.us/j/92037528009?pwd=c1dPQ3NwNHhaK0tjTTBIcmFMMnV5dz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_93
+ 05&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:41308_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220326T050023Z
+DTSTART;TZID=Asia/Tokyo:20220627T144000
+DTEND;TZID=Asia/Tokyo:20220627T161000
+SUMMARY:グループウェア特論
+LOCATION:https://zoom.us/j/92037528009?pwd=c1dPQ3NwNHhaK0tjTTBIcmFMMnV5dz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_93
+ 05&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:41309_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220326T050029Z
+DTSTART;TZID=Asia/Tokyo:20220704T144000
+DTEND;TZID=Asia/Tokyo:20220704T161000
+SUMMARY:グループウェア特論
+LOCATION:https://zoom.us/j/92037528009?pwd=c1dPQ3NwNHhaK0tjTTBIcmFMMnV5dz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_93
+ 05&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:41310_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220326T050036Z
+DTSTART;TZID=Asia/Tokyo:20220711T144000
+DTEND;TZID=Asia/Tokyo:20220711T161000
+SUMMARY:グループウェア特論
+LOCATION:https://zoom.us/j/92037528009?pwd=c1dPQ3NwNHhaK0tjTTBIcmFMMnV5dz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_93
+ 05&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:41311_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220326T050043Z
+DTSTART;TZID=Asia/Tokyo:20220718T144000
+DTEND;TZID=Asia/Tokyo:20220718T161000
+SUMMARY:グループウェア特論
+LOCATION:https://zoom.us/j/92037528009?pwd=c1dPQ3NwNHhaK0tjTTBIcmFMMnV5dz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_93
+ 05&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:41312_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220326T050050Z
+DTSTART;TZID=Asia/Tokyo:20220725T144000
+DTEND;TZID=Asia/Tokyo:20220725T161000
+SUMMARY:グループウェア特論
+LOCATION:https://zoom.us/j/92037528009?pwd=c1dPQ3NwNHhaK0tjTTBIcmFMMnV5dz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_93
+ 05&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:23690_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20210409T070109Z
+DTSTART;TZID=Asia/Tokyo:20210414T085000
+DTEND;TZID=Asia/Tokyo:20210414T102000
+RRULE:FREQ=WEEKLY;INTERVAL=1;UNTIL=20210802T085000;BYDAY=WE;WKST=SU
+SUMMARY:ダイバーシティから考える社会人力形成論
+LOCATION:https://zoom.us/j/97742872844?pwd=MkhtQzRRbGN3eGJDeDIyS2UzVlc1Zz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_18
+ 258&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:38749_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220325T085404Z
+DTSTART;TZID=Asia/Tokyo:20220413T085000
+DTEND;TZID=Asia/Tokyo:20220413T102000
+SUMMARY:ダイバーシティから考える社会人力形成論
+LOCATION:https://zoom.us/j/97742872844?pwd=MkhtQzRRbGN3eGJDeDIyS2UzVlc1Zz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_18
+ 258&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:38750_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220325T085411Z
+DTSTART;TZID=Asia/Tokyo:20220420T085000
+DTEND;TZID=Asia/Tokyo:20220420T102000
+SUMMARY:ダイバーシティから考える社会人力形成論
+LOCATION:https://zoom.us/j/97742872844?pwd=MkhtQzRRbGN3eGJDeDIyS2UzVlc1Zz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_18
+ 258&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:38751_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220325T085418Z
+DTSTART;TZID=Asia/Tokyo:20220427T085000
+DTEND;TZID=Asia/Tokyo:20220427T102000
+SUMMARY:ダイバーシティから考える社会人力形成論
+LOCATION:https://zoom.us/j/97742872844?pwd=MkhtQzRRbGN3eGJDeDIyS2UzVlc1Zz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_18
+ 258&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:39257_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220325T145802Z
+DTSTART;TZID=Asia/Tokyo:20220511T085000
+DTEND;TZID=Asia/Tokyo:20220511T102000
+SUMMARY:ダイバーシティから考える社会人力形成論
+LOCATION:https://zoom.us/j/97742872844?pwd=MkhtQzRRbGN3eGJDeDIyS2UzVlc1Zz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_18
+ 258&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:39258_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220325T145809Z
+DTSTART;TZID=Asia/Tokyo:20220518T085000
+DTEND;TZID=Asia/Tokyo:20220518T102000
+SUMMARY:ダイバーシティから考える社会人力形成論
+LOCATION:https://zoom.us/j/97742872844?pwd=MkhtQzRRbGN3eGJDeDIyS2UzVlc1Zz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_18
+ 258&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:39259_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220325T145815Z
+DTSTART;TZID=Asia/Tokyo:20220525T085000
+DTEND;TZID=Asia/Tokyo:20220525T102000
+SUMMARY:ダイバーシティから考える社会人力形成論
+LOCATION:https://zoom.us/j/97742872844?pwd=MkhtQzRRbGN3eGJDeDIyS2UzVlc1Zz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_18
+ 258&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:39260_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220325T145822Z
+DTSTART;TZID=Asia/Tokyo:20220601T085000
+DTEND;TZID=Asia/Tokyo:20220601T102000
+SUMMARY:ダイバーシティから考える社会人力形成論
+LOCATION:https://zoom.us/j/97742872844?pwd=MkhtQzRRbGN3eGJDeDIyS2UzVlc1Zz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_18
+ 258&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:39261_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220325T145829Z
+DTSTART;TZID=Asia/Tokyo:20220608T085000
+DTEND;TZID=Asia/Tokyo:20220608T102000
+SUMMARY:ダイバーシティから考える社会人力形成論
+LOCATION:https://zoom.us/j/97742872844?pwd=MkhtQzRRbGN3eGJDeDIyS2UzVlc1Zz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_18
+ 258&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:39262_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220325T145836Z
+DTSTART;TZID=Asia/Tokyo:20220615T085000
+DTEND;TZID=Asia/Tokyo:20220615T102000
+SUMMARY:ダイバーシティから考える社会人力形成論
+LOCATION:https://zoom.us/j/97742872844?pwd=MkhtQzRRbGN3eGJDeDIyS2UzVlc1Zz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_18
+ 258&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:39263_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220325T145843Z
+DTSTART;TZID=Asia/Tokyo:20220622T085000
+DTEND;TZID=Asia/Tokyo:20220622T102000
+SUMMARY:ダイバーシティから考える社会人力形成論
+LOCATION:https://zoom.us/j/97742872844?pwd=MkhtQzRRbGN3eGJDeDIyS2UzVlc1Zz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_18
+ 258&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:39264_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220325T145850Z
+DTSTART;TZID=Asia/Tokyo:20220629T085000
+DTEND;TZID=Asia/Tokyo:20220629T102000
+SUMMARY:ダイバーシティから考える社会人力形成論
+LOCATION:https://zoom.us/j/97742872844?pwd=MkhtQzRRbGN3eGJDeDIyS2UzVlc1Zz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_18
+ 258&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:39265_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220325T145857Z
+DTSTART;TZID=Asia/Tokyo:20220706T085000
+DTEND;TZID=Asia/Tokyo:20220706T102000
+SUMMARY:ダイバーシティから考える社会人力形成論
+LOCATION:https://zoom.us/j/97742872844?pwd=MkhtQzRRbGN3eGJDeDIyS2UzVlc1Zz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_18
+ 258&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:39266_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220325T145903Z
+DTSTART;TZID=Asia/Tokyo:20220713T085000
+DTEND;TZID=Asia/Tokyo:20220713T102000
+SUMMARY:ダイバーシティから考える社会人力形成論
+LOCATION:https://zoom.us/j/97742872844?pwd=MkhtQzRRbGN3eGJDeDIyS2UzVlc1Zz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_18
+ 258&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:39267_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220325T145910Z
+DTSTART;TZID=Asia/Tokyo:20220720T085000
+DTEND;TZID=Asia/Tokyo:20220720T102000
+SUMMARY:ダイバーシティから考える社会人力形成論
+LOCATION:https://zoom.us/j/97742872844?pwd=MkhtQzRRbGN3eGJDeDIyS2UzVlc1Zz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_18
+ 258&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:39268_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220325T145917Z
+DTSTART;TZID=Asia/Tokyo:20220727T085000
+DTEND;TZID=Asia/Tokyo:20220727T102000
+SUMMARY:ダイバーシティから考える社会人力形成論
+LOCATION:https://zoom.us/j/97742872844?pwd=MkhtQzRRbGN3eGJDeDIyS2UzVlc1Zz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_18
+ 258&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:39269_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220325T145924Z
+DTSTART;TZID=Asia/Tokyo:20220803T085000
+DTEND;TZID=Asia/Tokyo:20220803T102000
+SUMMARY:ダイバーシティから考える社会人力形成論
+LOCATION:https://zoom.us/j/97742872844?pwd=MkhtQzRRbGN3eGJDeDIyS2UzVlc1Zz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_18
+ 258&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:15018_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20200821T132926Z
+DTSTART;TZID=Asia/Tokyo:20200915T130000
+DTEND;TZID=Asia/Tokyo:20200915T161000
+SUMMARY:ベンチャー起業実践１
+LOCATION:https://zoom.us/j/98541646733?pwd=eUI0ZVJXaEhMeTgxbDNUa2RKejc1Zz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_21
+ 626&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:15019_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20200821T133020Z
+DTSTART;TZID=Asia/Tokyo:20201003T130000
+DTEND;TZID=Asia/Tokyo:20201003T161000
+SUMMARY:ベンチャー起業実践１
+LOCATION:https://zoom.us/j/98541646733?pwd=eUI0ZVJXaEhMeTgxbDNUa2RKejc1Zz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_21
+ 626&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:15020_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20200821T133133Z
+DTSTART;TZID=Asia/Tokyo:20201020T130000
+DTEND;TZID=Asia/Tokyo:20201020T143000
+SUMMARY:ベンチャー起業実践１
+LOCATION:https://zoom.us/j/98541646733?pwd=eUI0ZVJXaEhMeTgxbDNUa2RKejc1Zz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_21
+ 626&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:15023_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20200821T133229Z
+DTSTART;TZID=Asia/Tokyo:20201124T130000
+DTEND;TZID=Asia/Tokyo:20201124T161000
+SUMMARY:ベンチャー起業実践１
+LOCATION:https://zoom.us/j/98541646733?pwd=eUI0ZVJXaEhMeTgxbDNUa2RKejc1Zz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_21
+ 626&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:24027_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20210414T005819Z
+DTSTART;TZID=Asia/Tokyo:20210416T183000
+DTEND;TZID=Asia/Tokyo:20210416T200000
+SUMMARY:ベンチャー起業実践１
+LOCATION:https://zoom.us/j/97694315180?pwd=RlIyZTVmb1JBK2VUbEx1ZWZVaWRYdz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_21
+ 626&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:24028_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20210414T010157Z
+DTSTART;TZID=Asia/Tokyo:20210522T100000
+DTEND;TZID=Asia/Tokyo:20210522T173000
+EXDATE:20210529T010000Z
+EXDATE:20210530T010000Z
+EXDATE:20210605T010000Z
+EXDATE:20210606T010000Z
+EXDATE:20210612T010000Z
+EXDATE:20210613T010000Z
+EXDATE:20210619T010000Z
+EXDATE:20210620T010000Z
+EXDATE:20210626T010000Z
+EXDATE:20210627T010000Z
+EXDATE:20210703T010000Z
+EXDATE:20210704T010000Z
+EXDATE:20210710T010000Z
+EXDATE:20210711T010000Z
+EXDATE:20210718T010000Z
+EXDATE:20210724T010000Z
+EXDATE:20210801T010000Z
+EXDATE:20210807T010000Z
+EXDATE:20210717T010000Z
+RRULE:FREQ=WEEKLY;INTERVAL=1;UNTIL=20210807T100000;BYDAY=SU,SA;WKST=SU
+SUMMARY:ベンチャー起業実践１
+LOCATION:https://zoom.us/j/97694315180?pwd=RlIyZTVmb1JBK2VUbEx1ZWZVaWRYdz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_21
+ 626&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:24029_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20210414T011225Z
+DTSTART;TZID=Asia/Tokyo:20210606T100000
+DTEND;TZID=Asia/Tokyo:20210606T170000
+SUMMARY:ベンチャー起業実践１
+LOCATION:https://zoom.us/j/97694315180?pwd=RlIyZTVmb1JBK2VUbEx1ZWZVaWRYdz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_21
+ 626&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:24030_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20210414T011315Z
+DTSTART;TZID=Asia/Tokyo:20210619T100000
+DTEND;TZID=Asia/Tokyo:20210619T170000
+SUMMARY:ベンチャー起業実践１
+LOCATION:https://zoom.us/j/97694315180?pwd=RlIyZTVmb1JBK2VUbEx1ZWZVaWRYdz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_21
+ 626&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:24031_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20210414T011702Z
+DTSTART;TZID=Asia/Tokyo:20210626T130000
+DTEND;TZID=Asia/Tokyo:20210626T173000
+SUMMARY:ベンチャー起業実践１
+LOCATION:https://zoom.us/j/97694315180?pwd=RlIyZTVmb1JBK2VUbEx1ZWZVaWRYdz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_21
+ 626&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:24032_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20210414T011609Z
+DTSTART;TZID=Asia/Tokyo:20210807T133000
+DTEND;TZID=Asia/Tokyo:20210807T163000
+SUMMARY:ベンチャー起業実践１
+LOCATION:https://zoom.us/j/97694315180?pwd=RlIyZTVmb1JBK2VUbEx1ZWZVaWRYdz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_21
+ 626&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:24033_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20210414T011641Z
+DTSTART;TZID=Asia/Tokyo:20210717T130000
+DTEND;TZID=Asia/Tokyo:20210717T173000
+SUMMARY:ベンチャー起業実践１
+LOCATION:https://zoom.us/j/97694315180?pwd=RlIyZTVmb1JBK2VUbEx1ZWZVaWRYdz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_21
+ 626&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:28537_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20210630T055055Z
+DTSTART;TZID=Asia/Tokyo:20210402T004500
+DTEND;TZID=Asia/Tokyo:20210402T004500
+SUMMARY:情報セキュリティ教育用コンテンツ  Information Security Education (コースの開始)
+DESCRIPTION:学部1年，学部3年など，はじめて本学のネットワーク環境を利用される学生のためのコンテンツです．\n(This content
+ s are for B1\, B3\, and all persons who use network environment in NU…
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_18
+ 270&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:28538_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20210630T055055Z
+DTSTART;TZID=Asia/Tokyo:20210831T235500
+DTEND;TZID=Asia/Tokyo:20210831T235500
+SUMMARY:情報セキュリティ教育用コンテンツ  Information Security Education (コースの終了)
+DESCRIPTION:学部1年，学部3年など，はじめて本学のネットワーク環境を利用される学生のためのコンテンツです．\n(This content
+ s are for B1\, B3\, and all persons who use network environment in NU…
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_18
+ 270&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:23152_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20210405T060302Z
+DTSTART;TZID=Asia/Tokyo:20210412T130000
+DTEND;TZID=Asia/Tokyo:20210412T143000
+RRULE:FREQ=WEEKLY;INTERVAL=1;UNTIL=20210802T130000;BYDAY=MO;WKST=SU
+SUMMARY:情報検索システム特論 / Advanced Information Retrieval Systems
+LOCATION:https://zoom.us/j/97795751481?pwd=SW0rcVNRdzluMjBSZXBsRU41b0hvdz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_30
+ 39&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:41265_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220326T045340Z
+DTSTART;TZID=Asia/Tokyo:20220411T130000
+DTEND;TZID=Asia/Tokyo:20220411T143000
+SUMMARY:情報検索システム特論
+LOCATION:https://zoom.us/j/99279207310?pwd=Syt5MXJKVGdBREM3OGlQWFNEOUZtQT0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_30
+ 39&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:41266_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220326T045347Z
+DTSTART;TZID=Asia/Tokyo:20220418T130000
+DTEND;TZID=Asia/Tokyo:20220418T143000
+SUMMARY:情報検索システム特論
+LOCATION:https://zoom.us/j/99279207310?pwd=Syt5MXJKVGdBREM3OGlQWFNEOUZtQT0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_30
+ 39&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:41267_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220326T045354Z
+DTSTART;TZID=Asia/Tokyo:20220425T130000
+DTEND;TZID=Asia/Tokyo:20220425T143000
+SUMMARY:情報検索システム特論
+LOCATION:https://zoom.us/j/99279207310?pwd=Syt5MXJKVGdBREM3OGlQWFNEOUZtQT0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_30
+ 39&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:41268_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220326T045401Z
+DTSTART;TZID=Asia/Tokyo:20220502T130000
+DTEND;TZID=Asia/Tokyo:20220502T143000
+SUMMARY:情報検索システム特論
+LOCATION:https://zoom.us/j/99279207310?pwd=Syt5MXJKVGdBREM3OGlQWFNEOUZtQT0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_30
+ 39&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:41269_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220326T045408Z
+DTSTART;TZID=Asia/Tokyo:20220509T130000
+DTEND;TZID=Asia/Tokyo:20220509T143000
+SUMMARY:情報検索システム特論
+LOCATION:https://zoom.us/j/99279207310?pwd=Syt5MXJKVGdBREM3OGlQWFNEOUZtQT0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_30
+ 39&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:41270_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220326T045415Z
+DTSTART;TZID=Asia/Tokyo:20220516T130000
+DTEND;TZID=Asia/Tokyo:20220516T143000
+SUMMARY:情報検索システム特論
+LOCATION:https://zoom.us/j/99279207310?pwd=Syt5MXJKVGdBREM3OGlQWFNEOUZtQT0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_30
+ 39&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:41271_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220326T045422Z
+DTSTART;TZID=Asia/Tokyo:20220523T130000
+DTEND;TZID=Asia/Tokyo:20220523T143000
+SUMMARY:情報検索システム特論
+LOCATION:https://zoom.us/j/99279207310?pwd=Syt5MXJKVGdBREM3OGlQWFNEOUZtQT0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_30
+ 39&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:41272_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220326T045429Z
+DTSTART;TZID=Asia/Tokyo:20220530T130000
+DTEND;TZID=Asia/Tokyo:20220530T143000
+SUMMARY:情報検索システム特論
+LOCATION:https://zoom.us/j/99279207310?pwd=Syt5MXJKVGdBREM3OGlQWFNEOUZtQT0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_30
+ 39&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:41273_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220326T045436Z
+DTSTART;TZID=Asia/Tokyo:20220606T130000
+DTEND;TZID=Asia/Tokyo:20220606T143000
+SUMMARY:情報検索システム特論
+LOCATION:https://zoom.us/j/99279207310?pwd=Syt5MXJKVGdBREM3OGlQWFNEOUZtQT0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_30
+ 39&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:41274_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220326T045443Z
+DTSTART;TZID=Asia/Tokyo:20220613T130000
+DTEND;TZID=Asia/Tokyo:20220613T143000
+SUMMARY:情報検索システム特論
+LOCATION:https://zoom.us/j/99279207310?pwd=Syt5MXJKVGdBREM3OGlQWFNEOUZtQT0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_30
+ 39&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:41275_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220326T045449Z
+DTSTART;TZID=Asia/Tokyo:20220620T130000
+DTEND;TZID=Asia/Tokyo:20220620T143000
+SUMMARY:情報検索システム特論
+LOCATION:https://zoom.us/j/99279207310?pwd=Syt5MXJKVGdBREM3OGlQWFNEOUZtQT0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_30
+ 39&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:41276_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220326T045456Z
+DTSTART;TZID=Asia/Tokyo:20220627T130000
+DTEND;TZID=Asia/Tokyo:20220627T143000
+SUMMARY:情報検索システム特論
+LOCATION:https://zoom.us/j/99279207310?pwd=Syt5MXJKVGdBREM3OGlQWFNEOUZtQT0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_30
+ 39&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:41277_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220326T045503Z
+DTSTART;TZID=Asia/Tokyo:20220704T130000
+DTEND;TZID=Asia/Tokyo:20220704T143000
+SUMMARY:情報検索システム特論
+LOCATION:https://zoom.us/j/99279207310?pwd=Syt5MXJKVGdBREM3OGlQWFNEOUZtQT0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_30
+ 39&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:41278_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220326T045510Z
+DTSTART;TZID=Asia/Tokyo:20220711T130000
+DTEND;TZID=Asia/Tokyo:20220711T143000
+SUMMARY:情報検索システム特論
+LOCATION:https://zoom.us/j/99279207310?pwd=Syt5MXJKVGdBREM3OGlQWFNEOUZtQT0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_30
+ 39&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:41279_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220326T045517Z
+DTSTART;TZID=Asia/Tokyo:20220718T130000
+DTEND;TZID=Asia/Tokyo:20220718T143000
+SUMMARY:情報検索システム特論
+LOCATION:https://zoom.us/j/99279207310?pwd=Syt5MXJKVGdBREM3OGlQWFNEOUZtQT0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_30
+ 39&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:41280_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220326T045524Z
+DTSTART;TZID=Asia/Tokyo:20220725T130000
+DTEND;TZID=Asia/Tokyo:20220725T143000
+SUMMARY:情報検索システム特論
+LOCATION:https://zoom.us/j/99279207310?pwd=Syt5MXJKVGdBREM3OGlQWFNEOUZtQT0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_30
+ 39&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:23139_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20210405T052515Z
+DTSTART;TZID=Asia/Tokyo:20210412T085000
+DTEND;TZID=Asia/Tokyo:20210412T102000
+RRULE:FREQ=WEEKLY;INTERVAL=1;UNTIL=20210802T085000;BYDAY=MO;WKST=SU
+SUMMARY:技術英語特別演習１（Special Exercises in Technical English 1）
+LOCATION:https://zoom.us/j/92116629026?pwd=SnJmRzFTSTduRHZ6MllJc3hUZ1pldz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_13
+ 410&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:38547_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220322T055330Z
+DTSTART;TZID=Asia/Tokyo:20220411T085000
+DTEND;TZID=Asia/Tokyo:20220411T102000
+RRULE:FREQ=WEEKLY;INTERVAL=1;UNTIL=20220725T085000;BYDAY=MO;WKST=SU
+SUMMARY:技術英語特別演習１
+LOCATION:https://zoom.us/j/92116629026?pwd=SnJmRzFTSTduRHZ6MllJc3hUZ1pldz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_13
+ 410&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:22951_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20210404T152640Z
+DTSTART;TZID=Asia/Tokyo:20210413T162000
+DTEND;TZID=Asia/Tokyo:20210413T175000
+RRULE:FREQ=WEEKLY;INTERVAL=1;UNTIL=20210803T162000;BYDAY=TU;WKST=SU
+SUMMARY:理論生命科学
+LOCATION:https://zoom.us/j/91996447388?pwd=QWpUZmhwbXFGa1ZicmMvdllkeXNXdz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_11
+ 471&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:42453_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220405T052436Z
+DTSTART;TZID=Asia/Tokyo:20220412T162000
+DTEND;TZID=Asia/Tokyo:20220412T175000
+EXDATE:20220503T072000Z
+RRULE:FREQ=WEEKLY;INTERVAL=1;UNTIL=20220803T162000;BYDAY=TU;WKST=SU
+SUMMARY:理論生命科学
+LOCATION:https://zoom.us/j/91996447388?pwd=QWpUZmhwbXFGa1ZicmMvdllkeXNXdz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_11
+ 471&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:23266_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20210406T042006Z
+DTSTART;TZID=Asia/Tokyo:20210415T130000
+DTEND;TZID=Asia/Tokyo:20210415T143000
+RRULE:FREQ=WEEKLY;INTERVAL=1;UNTIL=20210805T130000;BYDAY=TH;WKST=SU
+SUMMARY:生理情報計測論
+LOCATION:https://zoom.us/j/95960163466?pwd=aVRxU2d4bnBiSStFclYxQzFISzg1QT0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_45
+ 41&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:39031_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220325T140406Z
+DTSTART;TZID=Asia/Tokyo:20220414T130000
+DTEND;TZID=Asia/Tokyo:20220414T143000
+SUMMARY:生理情報計測論
+LOCATION:https://zoom.us/j/95960163466?pwd=MGxxWUdncjVRMmVTajRzY2dTYWJoZz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_45
+ 41&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:39032_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220325T140413Z
+DTSTART;TZID=Asia/Tokyo:20220421T130000
+DTEND;TZID=Asia/Tokyo:20220421T143000
+SUMMARY:生理情報計測論
+LOCATION:https://zoom.us/j/95960163466?pwd=MGxxWUdncjVRMmVTajRzY2dTYWJoZz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_45
+ 41&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:39033_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220325T140420Z
+DTSTART;TZID=Asia/Tokyo:20220428T130000
+DTEND;TZID=Asia/Tokyo:20220428T143000
+SUMMARY:生理情報計測論
+LOCATION:https://zoom.us/j/95960163466?pwd=MGxxWUdncjVRMmVTajRzY2dTYWJoZz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_45
+ 41&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:40441_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220325T190746Z
+DTSTART;TZID=Asia/Tokyo:20220512T130000
+DTEND;TZID=Asia/Tokyo:20220512T143000
+SUMMARY:生理情報計測論
+LOCATION:https://zoom.us/j/95960163466?pwd=MGxxWUdncjVRMmVTajRzY2dTYWJoZz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_45
+ 41&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:40442_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220325T190752Z
+DTSTART;TZID=Asia/Tokyo:20220519T130000
+DTEND;TZID=Asia/Tokyo:20220519T143000
+SUMMARY:生理情報計測論
+LOCATION:https://zoom.us/j/95960163466?pwd=MGxxWUdncjVRMmVTajRzY2dTYWJoZz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_45
+ 41&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:40443_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220325T190759Z
+DTSTART;TZID=Asia/Tokyo:20220526T130000
+DTEND;TZID=Asia/Tokyo:20220526T143000
+SUMMARY:生理情報計測論
+LOCATION:https://zoom.us/j/95960163466?pwd=MGxxWUdncjVRMmVTajRzY2dTYWJoZz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_45
+ 41&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:40444_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220325T190806Z
+DTSTART;TZID=Asia/Tokyo:20220602T130000
+DTEND;TZID=Asia/Tokyo:20220602T143000
+SUMMARY:生理情報計測論
+LOCATION:https://zoom.us/j/95960163466?pwd=MGxxWUdncjVRMmVTajRzY2dTYWJoZz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_45
+ 41&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:40445_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220325T190813Z
+DTSTART;TZID=Asia/Tokyo:20220609T130000
+DTEND;TZID=Asia/Tokyo:20220609T143000
+SUMMARY:生理情報計測論
+LOCATION:https://zoom.us/j/95960163466?pwd=MGxxWUdncjVRMmVTajRzY2dTYWJoZz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_45
+ 41&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:40446_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220325T190819Z
+DTSTART;TZID=Asia/Tokyo:20220616T130000
+DTEND;TZID=Asia/Tokyo:20220616T143000
+SUMMARY:生理情報計測論
+LOCATION:https://zoom.us/j/95960163466?pwd=MGxxWUdncjVRMmVTajRzY2dTYWJoZz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_45
+ 41&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:40447_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220325T190826Z
+DTSTART;TZID=Asia/Tokyo:20220623T130000
+DTEND;TZID=Asia/Tokyo:20220623T143000
+SUMMARY:生理情報計測論
+LOCATION:https://zoom.us/j/95960163466?pwd=MGxxWUdncjVRMmVTajRzY2dTYWJoZz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_45
+ 41&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:40448_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220325T190833Z
+DTSTART;TZID=Asia/Tokyo:20220630T130000
+DTEND;TZID=Asia/Tokyo:20220630T143000
+SUMMARY:生理情報計測論
+LOCATION:https://zoom.us/j/95960163466?pwd=MGxxWUdncjVRMmVTajRzY2dTYWJoZz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_45
+ 41&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:40449_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220325T190840Z
+DTSTART;TZID=Asia/Tokyo:20220707T130000
+DTEND;TZID=Asia/Tokyo:20220707T143000
+SUMMARY:生理情報計測論
+LOCATION:https://zoom.us/j/95960163466?pwd=MGxxWUdncjVRMmVTajRzY2dTYWJoZz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_45
+ 41&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:40450_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220325T190847Z
+DTSTART;TZID=Asia/Tokyo:20220714T130000
+DTEND;TZID=Asia/Tokyo:20220714T143000
+SUMMARY:生理情報計測論
+LOCATION:https://zoom.us/j/95960163466?pwd=MGxxWUdncjVRMmVTajRzY2dTYWJoZz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_45
+ 41&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:40451_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220325T190853Z
+DTSTART;TZID=Asia/Tokyo:20220721T130000
+DTEND;TZID=Asia/Tokyo:20220721T143000
+SUMMARY:生理情報計測論
+LOCATION:https://zoom.us/j/95960163466?pwd=MGxxWUdncjVRMmVTajRzY2dTYWJoZz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_45
+ 41&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:40452_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220325T190900Z
+DTSTART;TZID=Asia/Tokyo:20220728T130000
+DTEND;TZID=Asia/Tokyo:20220728T143000
+SUMMARY:生理情報計測論
+LOCATION:https://zoom.us/j/95960163466?pwd=MGxxWUdncjVRMmVTajRzY2dTYWJoZz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_45
+ 41&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:42137_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220326T111800Z
+DTSTART;TZID=Asia/Tokyo:20220801T130000
+DTEND;TZID=Asia/Tokyo:20220801T143000
+SUMMARY:生理情報計測論
+LOCATION:https://zoom.us/j/95960163466?pwd=MGxxWUdncjVRMmVTajRzY2dTYWJoZz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_45
+ 41&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:14457_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20200820T225106Z
+DTSTART;TZID=Asia/Tokyo:20200902T130000
+DTEND;TZID=Asia/Tokyo:20200902T143000
+RRULE:FREQ=WEEKLY;INTERVAL=1;UNTIL=20201031T130000;BYDAY=WE;WKST=SU
+SUMMARY:研究倫理ー０５（情報・経営専攻）
+LOCATION:https://zoom.us/j/93608547493?pwd=RTA5VWJ0UVB1Y2V4dDZZVVFJN3FMZz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_18
+ 399&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:14458_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20200820T225117Z
+DTSTART;TZID=Asia/Tokyo:20201104T130000
+DTEND;TZID=Asia/Tokyo:20201104T143000
+RRULE:FREQ=WEEKLY;INTERVAL=1;UNTIL=20201219T130000;BYDAY=WE;WKST=SU
+SUMMARY:研究倫理ー０５（情報・経営専攻）
+LOCATION:https://zoom.us/j/93608547493?pwd=RTA5VWJ0UVB1Y2V4dDZZVVFJN3FMZz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_18
+ 399&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:23015_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20210404T165611Z
+DTSTART;TZID=Asia/Tokyo:20210413T085000
+DTEND;TZID=Asia/Tokyo:20210413T102000
+EXDATE:20210621T235000Z
+EXDATE:20210628T235000Z
+RRULE:FREQ=WEEKLY;INTERVAL=1;UNTIL=20210803T085000;BYDAY=TU;WKST=SU
+SUMMARY:研究倫理
+LOCATION:https://zoom.us/j/93925212625?pwd=Y0YxMUg2SUY1UVhkRVpJcjBFVXdDQT0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_18
+ 399&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:27914_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20210620T061054Z
+DTSTART;TZID=Asia/Tokyo:20210622T085000
+DTEND;TZID=Asia/Tokyo:20210622T102000
+SUMMARY:研究倫理
+LOCATION:https://zoom.us/j/94486036237?pwd=TnNFRU9VVFdvL3ByY2xrZTN2cVBVQT0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_18
+ 399&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:27915_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20210620T061115Z
+DTSTART;TZID=Asia/Tokyo:20210629T085000
+DTEND;TZID=Asia/Tokyo:20210629T102000
+SUMMARY:研究倫理
+LOCATION:https://zoom.us/j/94486036237?pwd=TnNFRU9VVFdvL3ByY2xrZTN2cVBVQT0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_18
+ 399&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:38562_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220323T080354Z
+DTSTART;TZID=Asia/Tokyo:20220419T085000
+DTEND;TZID=Asia/Tokyo:20220419T102000
+EXDATE:20220502T235000Z
+RRULE:FREQ=WEEKLY;INTERVAL=1;UNTIL=20220628T085000;BYDAY=TU;WKST=SU
+SUMMARY:研究倫理ー０５
+LOCATION:https://zoom.us/j/91864607605?pwd=VnczUDNuQXZHb1lwK0xoeHZ5VjYydz0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_18
+ 399&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:42242_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220329T065028Z
+DTSTART;TZID=Asia/Tokyo:20220412T144000
+DTEND;TZID=Asia/Tokyo:20220412T161000
+EXDATE:20220503T054000Z
+RRULE:FREQ=WEEKLY;INTERVAL=1;UNTIL=20220803T144000;BYDAY=TU;WKST=SU
+SUMMARY:野生動物管理工学
+LOCATION:https://zoom.us/j/99825646778?pwd=SEhxU1k3OFBWNlFpVjR0WXkrMjlYUT0
+ 9
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=crs_69
+ 38&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:45456_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220606T032011Z
+DTSTART;TZID=Asia/Tokyo:20220613T130000
+DTEND;TZID=Asia/Tokyo:20220613T130000
+SUMMARY:Document-Term Matrix (締切)
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=exc_12
+ 1087&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:45665_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220611T010031Z
+DTSTART;TZID=Asia/Tokyo:20220627T130000
+DTEND;TZID=Asia/Tokyo:20220627T130000
+SUMMARY:Assignment #2 (締切)
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=exc_12
+ 4390&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:46333_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220627T020040Z
+DTSTART;TZID=Asia/Tokyo:20220704T130000
+DTEND;TZID=Asia/Tokyo:20220704T130000
+SUMMARY:Ranked List #3 (締切)
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=exc_12
+ 5825&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:46335_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220627T020059Z
+DTSTART;TZID=Asia/Tokyo:20220704T130000
+DTEND;TZID=Asia/Tokyo:20220704T130000
+SUMMARY:Ranked List #2 (締切)
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=exc_12
+ 5825&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:46337_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220627T020113Z
+DTSTART;TZID=Asia/Tokyo:20220704T130000
+DTEND;TZID=Asia/Tokyo:20220704T130000
+SUMMARY:Ranked List #1 (締切)
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=exc_12
+ 5825&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:46341_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220627T020217Z
+DTSTART;TZID=Asia/Tokyo:20220704T130000
+DTEND;TZID=Asia/Tokyo:20220704T130000
+SUMMARY:Ranked List #4 (締切)
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=exc_12
+ 5825&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:46602_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220703T042354Z
+DTSTART;TZID=Asia/Tokyo:20220718T143000
+DTEND;TZID=Asia/Tokyo:20220718T143000
+SUMMARY:Assignment #4 (締切)
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=exc_12
+ 6467&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:46962_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220710T005258Z
+DTSTART;TZID=Asia/Tokyo:20220718T143000
+DTEND;TZID=Asia/Tokyo:20220718T143000
+SUMMARY:Transition Probability Matrix (締切)
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=exc_12
+ 7067&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:46964_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220710T005326Z
+DTSTART;TZID=Asia/Tokyo:20220718T143000
+DTEND;TZID=Asia/Tokyo:20220718T143000
+SUMMARY:Page Score List (締切)
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=exc_12
+ 7067&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:47576_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220721T030333Z
+DTSTART;TZID=Asia/Tokyo:20220727T000000
+DTEND;TZID=Asia/Tokyo:20220727T000000
+SUMMARY:2022Asignment (締切)
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=exc_12
+ 7855&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:42648_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220410T111234Z
+DTSTART;TZID=Asia/Tokyo:20220411T120000
+DTEND;TZID=Asia/Tokyo:20220411T120000
+SUMMARY:4月11日課題 (締切)
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=exc_11
+ 4618&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:43097_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220417T075258Z
+DTSTART;TZID=Asia/Tokyo:20220418T120000
+DTEND;TZID=Asia/Tokyo:20220418T120000
+SUMMARY:4月18日課題 (締切)
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=exc_11
+ 4618&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:43619_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220423T124144Z
+DTSTART;TZID=Asia/Tokyo:20220425T120000
+DTEND;TZID=Asia/Tokyo:20220425T120000
+SUMMARY:4月25日課題 (締切)
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=exc_11
+ 4618&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:43932_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220501T083759Z
+DTSTART;TZID=Asia/Tokyo:20220502T120000
+DTEND;TZID=Asia/Tokyo:20220502T120000
+SUMMARY:5月2日課題 (締切)
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=exc_11
+ 4618&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:44137_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220508T105719Z
+DTSTART;TZID=Asia/Tokyo:20220509T120000
+DTEND;TZID=Asia/Tokyo:20220509T120000
+SUMMARY:5月9日課題 (締切)
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=exc_11
+ 4618&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:44455_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220514T123026Z
+DTSTART;TZID=Asia/Tokyo:20220516T120000
+DTEND;TZID=Asia/Tokyo:20220516T120000
+SUMMARY:5月16日課題 (締切)
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=exc_11
+ 4618&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:44680_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220522T103835Z
+DTSTART;TZID=Asia/Tokyo:20220523T120000
+DTEND;TZID=Asia/Tokyo:20220523T120000
+SUMMARY:5月23日課題 (締切)
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=exc_11
+ 4618&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:45043_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220529T120746Z
+DTSTART;TZID=Asia/Tokyo:20220530T120000
+DTEND;TZID=Asia/Tokyo:20220530T120000
+SUMMARY:5月30日課題 (締切)
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=exc_11
+ 4618&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:45382_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220605T093415Z
+DTSTART;TZID=Asia/Tokyo:20220606T120000
+DTEND;TZID=Asia/Tokyo:20220606T120000
+SUMMARY:6月6日課題 (締切)
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=exc_11
+ 4618&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:45679_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220612T015701Z
+DTSTART;TZID=Asia/Tokyo:20220613T120000
+DTEND;TZID=Asia/Tokyo:20220613T120000
+SUMMARY:6月13日課題 (締切)
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=exc_11
+ 4618&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:45954_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220618T230659Z
+DTSTART;TZID=Asia/Tokyo:20220620T130000
+DTEND;TZID=Asia/Tokyo:20220620T130000
+SUMMARY:6月20日課題 (締切)
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=exc_11
+ 4618&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:46274_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220624T062454Z
+DTSTART;TZID=Asia/Tokyo:20220627T130000
+DTEND;TZID=Asia/Tokyo:20220627T130000
+SUMMARY:6月27日課題 (締切)
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=exc_11
+ 4618&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:46680_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220703T232003Z
+DTSTART;TZID=Asia/Tokyo:20220704T130000
+DTEND;TZID=Asia/Tokyo:20220704T130000
+SUMMARY:7月4日課題 (締切)
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=exc_11
+ 4618&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:46971_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220710T053640Z
+DTSTART;TZID=Asia/Tokyo:20220711T120000
+DTEND;TZID=Asia/Tokyo:20220711T120000
+SUMMARY:7月11日課題 (締切)
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=exc_11
+ 4618&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:47426_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220717T054222Z
+DTSTART;TZID=Asia/Tokyo:20220801T000000
+DTEND;TZID=Asia/Tokyo:20220801T000000
+SUMMARY:ReallyEnglish学習レポート (締切)
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=exc_11
+ 4618&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:47428_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220717T061823Z
+DTSTART;TZID=Asia/Tokyo:20220718T120000
+DTEND;TZID=Asia/Tokyo:20220718T120000
+SUMMARY:7月18日課題 (締切)
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=exc_11
+ 4618&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:43302_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220420T025636Z
+DTSTART;TZID=Asia/Tokyo:20220427T103000
+DTEND;TZID=Asia/Tokyo:20220427T103000
+SUMMARY:教育実習自己課題 (締切)
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=exc_11
+ 6723&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:44803_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220524T064521Z
+DTSTART;TZID=Asia/Tokyo:20220601T170000
+DTEND;TZID=Asia/Tokyo:20220601T170000
+SUMMARY:学級経営について (締切)
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=exc_12
+ 1558&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:44807_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220524T065417Z
+DTSTART;TZID=Asia/Tokyo:20220530T000000
+DTEND;TZID=Asia/Tokyo:20220530T000000
+SUMMARY:生徒指導について (締切)
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=exc_12
+ 1573&client_id=contents1
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220731T090503Z
+UID:44809_contents1@https://cera-e1.nagaokaut.ac.jp/ilias
+LAST-MODIFIED:20220524T065825Z
+DTSTART;TZID=Asia/Tokyo:20220530T000000
+DTEND;TZID=Asia/Tokyo:20220530T000000
+SUMMARY:5月25日水　授業欠席者用課題 (締切)
+URL;VALUE=URI:https://cera-e1.nagaokaut.ac.jp/ilias/goto.php?target=exc_12
+ 1582&client_id=contents1
+END:VEVENT
+END:VCALENDAR
