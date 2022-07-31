@@ -1,6 +1,14 @@
 <template>
   <div>
-    <video :src="`${base}holo.mp4`" loop autoplay muted class="holo"></video>
+    <video
+      :src="`${base}holo.mp4`"
+      loop
+      autoplay
+      muted
+      playsinline
+      preload
+      class="holo"
+    ></video>
     おはようございます。今日は調子が良さそうですね！色々なことに挑戦しましょう！
 
     <!-- <Artwork /> -->
