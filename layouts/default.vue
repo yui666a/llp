@@ -38,7 +38,7 @@
       <v-toolbar-title v-text="title" />
       <v-spacer />
       <div v-if="displayName">{{ displayName }}さん</div>
-      <nuxt-link v-else color="primary" to="/login">
+      <nuxt-link v-else color="primary" to="/login" class="login-icon">
         <v-icon>{{ 'mdi-login-variant' }}</v-icon>
       </nuxt-link>
 
@@ -165,6 +165,9 @@ export default {
 <style lang="scss" scoped>
 #app {
   height: 100vh;
+}
+.login-icon {
+  text-decoration: none;
 }
 
 .footer-item {

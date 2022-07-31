@@ -18,6 +18,7 @@ export const state = () => ({
       category: 'やること',
       status: '作業前',
     },
+
     {
       content: '〇〇ラーメン食べに行きたい',
       created: '2021-06-15 17:00',

@@ -110,14 +110,22 @@
     <v-container fixed-header class="todo-table-wrapper">
       <h3>やること</h3>
       <div v-for="todo in displayHaveToDos" :key="todo.name">
-        <v-checkbox v-model="checkbox" :label="todo.content"></v-checkbox>
+        <v-checkbox
+          :key="todo.name"
+          v-model="checkbox"
+          :label="todo.content"
+        ></v-checkbox>
       </div>
     </v-container>
 
     <v-container fixed-header class="todo-table-wrapper">
       <h3>やりたいこと</h3>
       <div v-for="todo in displayWantToDos" :key="todo.name">
-        <v-checkbox v-model="checkbox" :label="todo.content"></v-checkbox>
+        <v-checkbox
+          :key="todo.name"
+          v-model="checkbox"
+          :label="todo.content"
+        ></v-checkbox>
       </div>
     </v-container>
   </div>
@@ -127,7 +135,7 @@
 export default {
   data() {
     return {
-      isDisplayedAddWindow: true,
+      isDisplayedAddWindow: false,
       isDisplayedFilterWindow: false,
       content: '',
       selectCat: '',

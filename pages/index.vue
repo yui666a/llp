@@ -9,7 +9,17 @@
       preload
       class="holo"
     ></video>
-    おはようございます。今日は調子が良さそうですね！色々なことに挑戦しましょう！
+    <div class="text-center">
+      おはようございます。<br />
+      今日はスイカの日だそうです。<br />
+      最近は調子が良さそうですね！<br />
+      色々なことに挑戦してみませんか？
+    </div>
+    <div class="text-center">
+      <div>
+        <v-btn color="success" nuxt to="/suggest"> 予定を選ぶ </v-btn>
+      </div>
+    </div>
 
     <!-- <Artwork /> -->
     <!-- <div id="container"></div> -->
@@ -76,17 +86,20 @@ export default {
   //   // eslint-disable-next-line object-shorthand
   //   '$route.name': function (_new, _old) {},
   // },
+
   data() {
     return {
       base: '',
     }
   },
+
   mounted() {
     // this.init()
     const environment = process.env.NODE_ENV || 'local'
     const env = require(`../env/${environment}.ts`)
     this.base = env.BASE_URL
   },
+  methods: {},
 }
 </script>
 
