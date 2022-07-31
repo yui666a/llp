@@ -1,11 +1,47 @@
 export const state = () => ({
   todoList: [
-    // {
-    //   content: 'テスト',
-    //   created: '2021-06-15 17:00',
-    //   category: 'task',
-    //   status: '作業前',
-    // },
+    {
+      content: 'レポート作成',
+      created: '2021-06-15 17:00',
+      category: 'やること',
+      status: '作業前',
+    },
+    {
+      content: '部屋の掃除',
+      created: '2021-06-15 17:00',
+      category: 'やること',
+      status: '作業前',
+    },
+    {
+      content: 'ティッシュの買い出し',
+      created: '2021-06-15 17:00',
+      category: 'やること',
+      status: '作業前',
+    },
+    {
+      content: '〇〇ラーメン食べに行きたい',
+      created: '2021-06-15 17:00',
+      category: 'やりたいこと',
+      status: '作業前',
+    },
+    {
+      content: '筋トレをする',
+      created: '2021-06-15 17:00',
+      category: 'やりたいこと',
+      status: '作業前',
+    },
+    {
+      content: '公園に行く',
+      created: '2021-06-15 17:00',
+      category: 'やりたいこと',
+      status: '作業前',
+    },
+    {
+      content: '積読を消化する',
+      created: '2021-06-15 17:00',
+      category: 'やりたいこと',
+      status: '作業前',
+    },
   ],
   option: [
     { id: 0, label: 'OPEN' },
@@ -32,7 +68,7 @@ export const mutations = {
     state.todoList.unshift({
       content: obj.content,
       created: fmt,
-      cats: obj.cats,
+      category: obj.category,
       status: 'OPEN',
     })
   },
