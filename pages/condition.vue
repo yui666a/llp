@@ -76,6 +76,12 @@ export default {
     }
   },
   mounted() {
+    if (localStorage.getItem('conditions')) {
+      const data = JSON.parse(localStorage.getItem(''))
+      this.chartdata.datacollection.labels = data[0]
+      this.chartdata.datacollection.datasets[0].data = data[1]
+      this.chartdata.datacollection.datasets[1].data = data[2]
+    }
     this.getData()
   },
   methods: {
@@ -112,6 +118,10 @@ export default {
       this.chartdata.datacollection.labels = labels
       this.chartdata.datacollection.datasets[0].data = mentalData
       this.chartdata.datacollection.datasets[1].data = bodyData
+      localStorage.setItem(
+        'conditions',
+        JSON.stringify([labels, mentalData, bodyData])
+      )
     },
   },
 }

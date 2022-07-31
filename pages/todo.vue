@@ -111,7 +111,7 @@ export default {
     return {
       content: '',
       selectCat: '',
-      cats: ['やりたいこと', 'やること', 'TASK', 'BUG', 'ORDER', 'OTHER'],
+      cats: ['HAVE TO DO', 'WANT TO DO'],
       status: ['ALL', 'OPEN', 'IN PROGRESS', 'RESOLVED', 'COMPLETED'],
       find_status: '',
       find_flg: false,

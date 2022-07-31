@@ -93,7 +93,7 @@ export default {
 <style scoped>
 video {
   /* iPhone safariの枠線を消す */
-  filter: drop-shadow(0 0 rgb(0 0 0/ 0%));
+  filter: drop-shadow(0 0 #000);
 
   /* PCのChromeの枠線を消す */
   outline: none;
