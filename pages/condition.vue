@@ -77,10 +77,16 @@ export default {
   },
   mounted() {
     if (localStorage.getItem('conditions')) {
-      const data = JSON.parse(localStorage.getItem(''))
-      this.chartdata.datacollection.labels = data[0]
-      this.chartdata.datacollection.datasets[0].data = data[1]
-      this.chartdata.datacollection.datasets[1].data = data[2]
+      try {
+        const data = JSON.parse(localStorage.getItem(''))
+        this.chartdata.datacollection.labels = data[0]
+        this.chartdata.datacollection.datasets[0].data = data[1]
+        this.chartdata.datacollection.datasets[1].data = data[2]
+      } catch (error) {
+        console.error(error)
+        // expected output: ReferenceError: nonExistentFunction is not defined
+        // Note - error messages will vary depending on browser
+      }
     }
     this.getData()
   },

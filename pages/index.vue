@@ -17,7 +17,7 @@
     </div>
     <div class="text-center">
       <div>
-        <v-btn color="success" nuxt to="/suggest"> 予定を選ぶ </v-btn>
+        <v-btn color="success" nuxt to="/suggest"> 今日の予定は？ </v-btn>
       </div>
     </div>
 
