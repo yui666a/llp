@@ -8,40 +8,41 @@
         <v-icon v-else>mdi-close-circle-outline</v-icon>
       </v-btn>
     </v-container>
-    <v-container v-if="isDisplayedAddWindow">
-      <v-form>
-        <v-row align="center">
-          <v-col class="d-flex" cols="12" sm="6">
-            <v-text-field
-              v-model="content"
-              label="やること・やりたいこと"
-              required
-            >
-            </v-text-field>
-          </v-col>
-        </v-row>
-        <v-row align="center">
-          <v-col class="d-flex" cols="12" sm="6">
-            <v-select
-              v-model="selectCat"
-              :items="category"
-              label="カテゴリー"
-              style="width: 250px"
-              required
-            >
-            </v-select>
-          </v-col>
-          <v-col class="d-flex" cols="12" sm="6">
-            <v-btn class="primary" @click="insert">追加</v-btn>
-          </v-col>
-        </v-row>
-      </v-form>
-    </v-container>
+    <div class="todo-area">
+      <v-container v-if="isDisplayedAddWindow">
+        <v-form>
+          <v-row align="center">
+            <v-col class="d-flex" cols="12" sm="6">
+              <v-text-field
+                v-model="content"
+                label="やること・やりたいこと"
+                required
+              >
+              </v-text-field>
+            </v-col>
+          </v-row>
+          <v-row align="center">
+            <v-col class="d-flex" cols="12" sm="6">
+              <v-select
+                v-model="selectCat"
+                :items="category"
+                label="カテゴリー"
+                style="width: 250px"
+                required
+              >
+              </v-select>
+            </v-col>
+            <v-col class="d-flex" cols="12" sm="6">
+              <v-btn class="primary" @click="insert">追加</v-btn>
+            </v-col>
+          </v-row>
+        </v-form>
+      </v-container>
 
-    <v-container v-if="isDisplayedFilterWindow">
-      <div class="filter">
-        <v-row align="center" class="mb-6">
-          <!-- <v-col
+      <v-container v-if="isDisplayedFilterWindow">
+        <div class="filter">
+          <v-row align="center" class="mb-6">
+            <!-- <v-col
             v-for="state in status"
             :key="state.name"
             class="pa-2"
@@ -49,21 +50,23 @@
           >
             <v-btn text elevation="0">{{ state }}</v-btn>
           </v-col> -->
-          <v-col class="pa-2" cols="auto">
-            <v-btn text elevation="0" @click="flag_reset">ALL</v-btn>
-            <v-btn text elevation="0" @click="find('OPEN')">OPEN</v-btn>
-            <v-btn text elevation="0" @click="find('IN PROGRESS')">
-              IN PROGRESS
-            </v-btn>
-            <v-btn text elevation="0" @click="find('RESOLVED')">RESOLVED</v-btn>
-            <v-btn text elevation="0" @click="find('COMPLETED')"
-              >COMPLETED</v-btn
-            >
-          </v-col>
-        </v-row>
-      </div>
-    </v-container>
-    <!-- <v-container>
+            <v-col class="pa-2" cols="auto">
+              <v-btn text elevation="0" @click="flag_reset">ALL</v-btn>
+              <v-btn text elevation="0" @click="find('OPEN')">OPEN</v-btn>
+              <v-btn text elevation="0" @click="find('IN PROGRESS')">
+                IN PROGRESS
+              </v-btn>
+              <v-btn text elevation="0" @click="find('RESOLVED')"
+                >RESOLVED</v-btn
+              >
+              <v-btn text elevation="0" @click="find('COMPLETED')"
+                >COMPLETED</v-btn
+              >
+            </v-col>
+          </v-row>
+        </div>
+      </v-container>
+      <!-- <v-container>
       <v-simple-table fixed-header class="todo-table-wrapper" height="200px">
         <h3>やること</h3>
         <div>
@@ -107,27 +110,28 @@
         </div>
       </v-simple-table>
     </v-container> -->
-    <v-container fixed-header class="todo-table-wrapper">
-      <h3>やること</h3>
-      <div v-for="todo in displayHaveToDos" :key="todo.name">
-        <v-checkbox
-          :key="todo.name"
-          v-model="checkbox"
-          :label="todo.content"
-        ></v-checkbox>
-      </div>
-    </v-container>
+      <v-container fixed-header class="todo-table-wrapper">
+        <h3>やること</h3>
+        <div v-for="todo in displayHaveToDos" :key="todo.name">
+          <v-checkbox
+            :key="todo.name"
+            v-model="checkbox"
+            :label="todo.content"
+          ></v-checkbox>
+        </div>
+      </v-container>
 
-    <v-container fixed-header class="todo-table-wrapper">
-      <h3>やりたいこと</h3>
-      <div v-for="todo in displayWantToDos" :key="todo.name">
-        <v-checkbox
-          :key="todo.name"
-          v-model="checkbox"
-          :label="todo.content"
-        ></v-checkbox>
-      </div>
-    </v-container>
+      <v-container fixed-header class="todo-table-wrapper">
+        <h3>やりたいこと</h3>
+        <div v-for="todo in displayWantToDos" :key="todo.name">
+          <v-checkbox
+            :key="todo.name"
+            v-model="checkbox"
+            :label="todo.content"
+          ></v-checkbox>
+        </div>
+      </v-container>
+    </div>
   </div>
 </template>
 
@@ -202,7 +206,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .page-title {
   display: flex;
   justify-content: space-between;
@@ -226,5 +230,13 @@ export default {
 
 .completebtn {
   color: #009688;
+}
+.todo-area {
+  .v-input--selection-controls {
+    margin-top: 0 !important;
+  }
+  .v-messages {
+    min-height: 0 !important;
+  }
 }
 </style>

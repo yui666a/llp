@@ -12,12 +12,13 @@
     <div class="text-center">
       おはようございます。<br />
       今日はスイカの日だそうです。<br />
+      <br />
       最近は調子が良さそうですね！<br />
       色々なことに挑戦してみませんか？
     </div>
     <div class="text-center">
       <div>
-        <v-btn color="success" nuxt to="/suggest"> 今日の予定は？ </v-btn>
+        <v-btn color="primary" nuxt to="/suggest"> 今日の予定は？ </v-btn>
       </div>
     </div>
 

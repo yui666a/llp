@@ -61,10 +61,12 @@ export default {
     // this.base = env.BASE_URL
     if (this.$store.state.calendar.calendars.length === 0) {
       // this.$store.dispatch('calendar/fetchCalendars')
-      this.getData(`${env.BASE_URL}ilias.ics`, 'purple')
-      this.getData(`${env.BASE_URL}aiso.ics`, 'blue')
-      this.getData(`${env.BASE_URL}work.ics`, 'yellow')
-      this.getData(`${env.BASE_URL}school.ics`, 'green')
+      this.getData(`${env.BASE_URL}sakai.ics`, 'blue')
+
+      // this.getData(`${env.BASE_URL}ilias.ics`, 'purple')
+      // this.getData(`${env.BASE_URL}aiso.ics`, 'blue')
+      // this.getData(`${env.BASE_URL}work.ics`, 'yellow')
+      // this.getData(`${env.BASE_URL}school.ics`, 'green')
     } else {
       this.events = this.$store.state.calendar.calendars
     }
@@ -88,37 +90,34 @@ export default {
             // .replace(/([a-zA-Z])/g, '')
             .replace(/[^0-9]/g, '')
 
-          let year = startStr.substring(0, 4)
-          let month = startStr.substring(4, 6)
-          let day = startStr.substring(6, 8)
-          let start = year + '-' + month + '-' + day
-          if (startStr.length !== 8) {
-            const hour = startStr.substring(8, 10)
-            const min = startStr.substring(10, 12)
-            start = year + '-' + month + '-' + day + ' ' + hour + ':' + min
-          }
-
-          const endStr = event
-            .split('DTEND')[1]
-            .split('\n')[0]
-            // .replace(/([a-zA-Z])/g, '')
-            .replace(/[^0-9]/g, '')
-          year = endStr.substring(0, 4)
-          month = endStr.substring(4, 6)
-          day = endStr.substring(6, 8)
-          let end = year + '-' + month + '-' + day
-          if (endStr.length !== 8) {
-            const hour = endStr.substring(8, 10)
-            const min = endStr.substring(10, 12)
-            end = year + '-' + month + '-' + day + ' ' + hour + ':' + min
-          }
-
-          this.events.push({
+          let eventObj = {}
+          // if (!needOffset || startStr.includes('TZID=Asia/Tokyo')) {
+          //   const start = moment(startStr, 'YYYYMMDDHHmmss')
+          //   const end = moment(
+          //     event.split('DTEND')[1].split('\n')[0],
+          //     'YYYYMMDDHHmmss'
+          //   )
+          //   eventObj = {
+          //     name,
+          //     start: start.format('YYYY-MM-DD HH:mm'),
+          //     end: end.format('YYYY-MM-DD HH:mm'),
+          //     color,
+          //   }
+          // } else {
+          const start = moment(startStr, 'YYYYMMDDHHmmss').add(9, 'hours')
+          const end = moment(
+            event.split('DTEND')[1].split('\n')[0],
+            'YYYYMMDDHHmmss'
+          ).add(9, 'hours')
+          eventObj = {
             name,
-            start,
-            end,
+            start: start.format('YYYY-MM-DD HH:mm'),
+            end: end.format('YYYY-MM-DD HH:mm'),
             color,
-          })
+          }
+          // }
+
+          this.events.push({ ...eventObj })
         }
       })
     },
@@ -197,5 +196,6 @@ export default {
 .select-button-wrapper {
   margin-bottom: 5px;
   display: flex;
+  flex-wrap: wrap;
 }
 </style>

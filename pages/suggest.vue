@@ -19,10 +19,16 @@
         </v-toolbar>
       </v-sheet>
       <div class="select-button-wrapper">
-        どのプランを選択しますか？<br />
-        <v-btn @click="confirmPlan('plan1')"> 提案１ </v-btn>
-        <v-btn @click="confirmPlan('plan2')"> 提案２ </v-btn>
-        <v-btn @click="confirmPlan('plan3')"> 提案３ </v-btn>
+        <div class="select-button-text">どのプランを選択しますか？</div>
+        <v-btn class="select-plan-button" @click="confirmPlan('plan1')">
+          提案１
+        </v-btn>
+        <v-btn class="select-plan-button" @click="confirmPlan('plan2')">
+          提案２
+        </v-btn>
+        <v-btn class="select-plan-button" @click="confirmPlan('plan3')">
+          提案３
+        </v-btn>
       </div>
       <v-sheet height="600">
         <v-calendar
@@ -50,37 +56,42 @@ export default {
     plan1: [
       {
         name: '部屋の掃除',
-        start: '2022-07-31 10:00',
-        end: '2022-07-31 13:00',
+        start: '2022-07-30 8:00',
+        end: '2022-07-30 9:00',
       },
       {
-        name: 'レポート作成',
-        start: '2022-07-31 14:00',
-        end: '2022-07-31 18:00',
+        name: 'ティッシュの買い出し',
+        start: '2022-07-30 12:00',
+        end: '2022-07-30 12:30',
+      },
+      {
+        name: '公園に行く',
+        start: '2022-07-30 12:30',
+        end: '2022-07-30 13:30',
       },
     ],
     plan2: [
       {
         name: '部屋の掃除',
-        start: '2022-07-31 10:00',
-        end: '2022-07-31 13:00',
+        start: '2022-07-30 8:00',
+        end: '2022-07-30 9:00',
       },
       {
-        name: 'ティッシュの買い出し',
-        start: '2022-07-31 17:30',
-        end: '2022-07-31 18:00',
+        name: '公園に行く',
+        start: '2022-07-30 12:00',
+        end: '2022-07-30 13:00',
       },
     ],
     plan3: [
       {
         name: '公園に行く',
-        start: '2022-07-31 16:00',
-        end: '2022-07-31 17:00',
+        start: '2022-07-30 8:00',
+        end: '2022-07-30 9:00',
       },
       {
-        name: 'ティッシュの買い出し',
-        start: '2022-07-31 17:15',
-        end: '2022-07-31 17:30',
+        name: 'ラーメン食べに行きたい',
+        start: '2022-07-30 12:00',
+        end: '2022-07-30 13:00',
       },
     ],
     colors: [
@@ -112,10 +123,12 @@ export default {
 
     if (this.$store.state.calendar.calendars.length === 0) {
       // this.$store.dispatch('calendar/fetchCalendars')
-      this.getData(`${env.BASE_URL}ilias.ics`, 'purple', false)
-      this.getData(`${env.BASE_URL}aiso.ics`, 'blue', true)
-      this.getData(`${env.BASE_URL}work.ics`, 'yellow', true)
-      this.getData(`${env.BASE_URL}school.ics`, 'green', true)
+      console.log('カレンダーなし')
+      this.getData(`${env.BASE_URL}sakai.ics`, 'blue', false)
+      // this.getData(`${env.BASE_URL}ilias.ics`, 'purple', false)
+      // this.getData(`${env.BASE_URL}aiso.ics`, 'blue', true)
+      // this.getData(`${env.BASE_URL}work.ics`, 'yellow', true)
+      // this.getData(`${env.BASE_URL}school.ics`, 'green', true)
     } else {
       this.events = this.$store.state.calendar.calendars
     }
@@ -187,31 +200,31 @@ export default {
             .replace(/[^0-9]/g, '')
 
           let eventObj = {}
-          if (!needOffset || startStr.includes('TZID=Asia/Tokyo')) {
-            const start = moment(startStr, 'YYYYMMDDHHmmss')
-            const end = moment(
-              event.split('DTEND')[1].split('\n')[0],
-              'YYYYMMDDHHmmss'
-            )
-            eventObj = {
-              name,
-              start: start.format('YYYY-MM-DD HH:mm'),
-              end: end.format('YYYY-MM-DD HH:mm'),
-              color,
-            }
-          } else {
-            const start = moment(startStr, 'YYYYMMDDHHmmss').add(9, 'hours')
-            const end = moment(
-              event.split('DTEND')[1].split('\n')[0],
-              'YYYYMMDDHHmmss'
-            ).add(9, 'hours')
-            eventObj = {
-              name,
-              start: start.format('YYYY-MM-DD HH:mm'),
-              end: end.format('YYYY-MM-DD HH:mm'),
-              color,
-            }
+          // if (!needOffset || startStr.includes('TZID=Asia/Tokyo')) {
+          //   const start = moment(startStr, 'YYYYMMDDHHmmss')
+          //   const end = moment(
+          //     event.split('DTEND')[1].split('\n')[0],
+          //     'YYYYMMDDHHmmss'
+          //   )
+          //   eventObj = {
+          //     name,
+          //     start: start.format('YYYY-MM-DD HH:mm'),
+          //     end: end.format('YYYY-MM-DD HH:mm'),
+          //     color,
+          //   }
+          // } else {
+          const start = moment(startStr, 'YYYYMMDDHHmmss').add(9, 'hours')
+          const end = moment(
+            event.split('DTEND')[1].split('\n')[0],
+            'YYYYMMDDHHmmss'
+          ).add(9, 'hours')
+          eventObj = {
+            name,
+            start: start.format('YYYY-MM-DD HH:mm'),
+            end: end.format('YYYY-MM-DD HH:mm'),
+            color,
           }
+          // }
           this.events.push({ ...eventObj, category: '提案1' })
           this.events.push({ ...eventObj, category: '提案2' })
           this.events.push({ ...eventObj, category: '提案3' })
@@ -257,6 +270,17 @@ export default {
   }
   .v-calendar-daily__intervals-head {
     width: 47px !important;
+  }
+}
+.select-button-text {
+  width: 100%;
+}
+.select-button-wrapper {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-end;
+  .select-plan-button {
+    margin: 2px;
   }
 }
 </style>

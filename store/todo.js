@@ -20,7 +20,7 @@ export const state = () => ({
     },
 
     {
-      content: '〇〇ラーメン食べに行きたい',
+      content: 'ラーメン食べに行きたい',
       created: '2021-06-15 17:00',
       category: 'やりたいこと',
       status: '作業前',

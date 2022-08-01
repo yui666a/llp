@@ -1,6 +1,6 @@
 <template>
   <v-row>
-    <v-col class="text-center">
+    <v-col class="text-center input-area">
       <div>カラダ</div>
       <span v-for="n of 5" :key="`body ${n}`">
         <font-awesome
@@ -17,6 +17,17 @@
           @click="onClickMentalCondition(n)"
         />
       </span>
+      <div class="hitokoto">
+        <div>ひとこと</div>
+        <v-col cols="12" md="6">
+          <v-textarea
+            outlined
+            name="input-7-4"
+            label="ちょっとしたひとこと"
+            value=""
+          ></v-textarea>
+        </v-col>
+      </div>
       <div>
         <v-btn color="success" @click="confirmCondition"> 完了 </v-btn>
       </div>
@@ -61,3 +72,11 @@ export default {
   },
 }
 </script>
+<style lang="scss" scoped>
+.input-area {
+  font-size: 1.5rem;
+}
+.hitokoto {
+  margin-top: 3rem;
+}
+</style>
