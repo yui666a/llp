@@ -124,7 +124,7 @@ export default {
     if (this.$store.state.calendar.calendars.length === 0) {
       // this.$store.dispatch('calendar/fetchCalendars')
       console.log('カレンダーなし')
-      this.getData(`${env.BASE_URL}sakai.ics`, 'blue', false)
+      this.getData(`${env.BASE_URL}sakai.ics`, 'blue')
       // this.getData(`${env.BASE_URL}ilias.ics`, 'purple', false)
       // this.getData(`${env.BASE_URL}aiso.ics`, 'blue', true)
       // this.getData(`${env.BASE_URL}work.ics`, 'yellow', true)
@@ -187,7 +187,8 @@ export default {
     next() {
       this.$refs.calendar.next()
     },
-    async getData(icsFile, color, needOffset) {
+    async getData(icsFile, color) {
+      // async getData(icsFile, color, needOffset) {
       const res = await this.$axios.$get(icsFile)
       res.split('BEGIN:VEVENT').forEach((item) => {
         if (item.includes('END:VEVENT')) {
