@@ -1,3 +1,8 @@
+//! moment.js
+
+//! moment.js locale configuration
+
+
 /*!
  * Font Awesome Free 6.1.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -18,6 +23,21 @@
 
 
 /*!
+ * @kurkle/color v0.2.1
+ * https://github.com/kurkle/color#readme
+ * (c) 2022 Jukka Kurkela
+ * Released under the MIT License
+ */
+
+/*!
+ * Chart.js v3.8.2
+ * https://www.chartjs.org
+ * (c) 2022 Chart.js Contributors
+ * Released under the MIT License
+ */
+
+
+/*!
   * vue-router v3.5.4
   * (c) 2022 Evan You
   * @license MIT
@@ -34,23 +54,3 @@
  * (c) 2021 Evan You
  * @license MIT
  */
-
-
-/*!
- * @kurkle/color v0.2.1
- * https://github.com/kurkle/color#readme
- * (c) 2022 Jukka Kurkela
- * Released under the MIT License
- */
-
-/*!
- * Chart.js v3.8.2
- * https://www.chartjs.org
- * (c) 2022 Chart.js Contributors
- * Released under the MIT License
- */
-
-
-//! moment.js
-
-//! moment.js locale configuration
