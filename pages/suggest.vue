@@ -110,10 +110,15 @@ export default {
     const env = require(`../env/${environment}.ts`)
     // this.base = env.BASE_URL
 
-    this.getData(`${env.BASE_URL}ilias.ics`, 'purple', false)
-    this.getData(`${env.BASE_URL}aiso.ics`, 'blue', true)
-    this.getData(`${env.BASE_URL}work.ics`, 'yellow', true)
-    this.getData(`${env.BASE_URL}school.ics`, 'green', true)
+    if (this.$store.state.calendar.calendars.length === 0) {
+      // this.$store.dispatch('calendar/fetchCalendars')
+      this.getData(`${env.BASE_URL}ilias.ics`, 'purple', false)
+      this.getData(`${env.BASE_URL}aiso.ics`, 'blue', true)
+      this.getData(`${env.BASE_URL}work.ics`, 'yellow', true)
+      this.getData(`${env.BASE_URL}school.ics`, 'green', true)
+    } else {
+      this.events = this.$store.state.calendar.calendars
+    }
 
     this.thinkPlan1()
     this.thinkPlan2()
@@ -210,6 +215,23 @@ export default {
           this.events.push({ ...eventObj, category: '提案1' })
           this.events.push({ ...eventObj, category: '提案2' })
           this.events.push({ ...eventObj, category: '提案3' })
+
+          // /* オブジェクトをソート済み配列に変換する */
+          // const objToSortedArray = (obj) => Object.entries(obj).sort()
+
+          // /* ソート済み配列を文字列に変換して比較する */
+          // const isEqualOneDimentionalArray = (obj1, obj2) =>
+          //   JSON.stringify(objToSortedArray(obj1)) ===
+          //   JSON.stringify(objToSortedArray(obj2))
+
+          // /* 再帰処理を行い、ネストされたオブジェクトまで比較する */
+          // const isEqual = (obj1, obj2) =>
+          //   isEqualOneDimentionalArray(obj1, obj2) &&
+          //   objToSortedArray(obj1).map(([key, val]) =>
+          //     typeof val === 'object' ? isEqual(val, obj2[key]) : true
+          //   )
+          // if (isEqual(initialState, state)){}
+
           // storeに保存
           this.$store.commit('calendar/insert', { ...eventObj })
         }
