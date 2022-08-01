@@ -11,6 +11,14 @@
         <v-btn depressed small @click="getData">更新</v-btn>
       </div> -->
     </v-col>
+    <v-col>
+      <div>7/29 18:27 人の研究で自分のできてない</div>
+      <div>7/27 05:08 外がもう明るい</div>
+      <div>7/26 23:51 今日も学校宿泊コースだ</div>
+      <div>7/25 18:36 LLP MTG中</div>
+      <div>7/25 12:50 おなかすいた</div>
+      <div>7/25 12:42 てすと</div>
+    </v-col>
   </v-row>
 </template>
 
